@@ -6,11 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
+    
 </head>
 <body>
-    <div class="nav-bar">
-
+    <div class="product" id="blur">
+        <div class="product_column">
+            <div class="box">
+                <div class="grid">
+                    <div class="images">
+                        <img src="../images/1.jpg"> 
+                    </div>
+                    <div class="link">             
+                        <a href="#" onclick="toggle()">More</a>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="images">
+                        <img src="../images/7.jpg">   
+                    </div>
+                    <div class="link">             
+                        <a href="#" onclick="toggle()">More</a>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="images">
+                        <img src="../images/3.jpg">  
+                    </div>
+                    <div class="link">              
+                        <a href="#" onclick="toggle()">More</a>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="images">
+                        <img src="../images/4.jpg">  
+                    </div>
+                    <div class="link">
+                        <a href="#" onclick="toggle()">More</a>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="images">
+                        <img src="../images/5.jpg">
+                    </div>
+                    <div class="link">
+                        <a href="#" onclick="toggle()">More</a>
+                    </div> 
+                </div>
+            </div>
+        
+            <div class="box">
+                <div class="images">
+                    <img src="../images/6.jpg"> 
+                </div>
+                <div class="link">
+                    <a href="#" onclick="toggle()">More</a>
+                </div>
+                <div class="images">
+                    <img src="../images/2.jpg">
+                </div>
+                <div class="link">
+                    <a href="#" onclick="toggle()">More</a>
+                </div>           
+                <div class="images">
+                    <img src="../images/13.jpg">
+                </div>
+                <div class="link">
+                    <a href="#" onclick="toggle()">More</a>
+                </div>           
+                <div class="images">
+                    <img src="../images/9.jpg">
+                </div>
+                <div class="link">
+                    <a href="#" onclick="toggle()">More</a>
+                </div>            
+                <div class="images">
+                    <img src="../images/10.jpg">
+                </div>
+                <div class="link">
+                    <a href="#" onclick="toggle()">More</a>
+                </div>
+            </div>
+        
+            <div class="box">
+                <div class="images">
+                    <img src="../images/11.jpg">
+                </div>
+                <div class="link">
+                    <a href="#" onclick="toggle()">More</a>
+                </div>            
+                <div class="images">
+                    <img src="../images/12.jpg">
+                </div>
+                <div class="link">
+                    <a href="#" onclick="toggle()">More</a>
+                </div>           
+                <div class="images">
+                    <img src="../images/8.jpg">
+                </div>
+                <div class="link">
+                    <a href="#" onclick="toggle()">More</a>
+                </div>            
+                <div class="images">
+                    <img src="../images/14.jpg">
+                </div>
+                <div class="link">
+                    <a href="#" onclick="toggle()">More</a>
+                </div>            
+               <div class="images">
+                    <img src="../images/15.jpg">
+                </div>
+                <div class="link">
+                    <a href="#" onclick="toggle()">More</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <div id="popup">
+        <h2>lorem ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, 
+            consequatur ducimus voluptate, at rem velit quos dolore expedita 
+            repellendus animi suscipit aperiam minus laboriosam accusamus magnam 
+            sed deserunt tenetur quod.</p>
+            <a href="#" onclick="toggle()">Close</a>
+    </div>
+    <script type="text/javascript">
+        function toggle(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
     <div class="footer">
 
     </div>
