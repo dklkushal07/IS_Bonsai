@@ -1,0 +1,143 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.intro{
+  position: relative;
+  /* flex-wrap: nowrap; */
+  
+}
+.intro h1{
+  position: absolute;
+  font-size: 5vw;
+  /* to center the h1 */
+  left: 50%;
+  transform: translate(-50%, 0); */
+}
+
+.intro img{
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.fa{
+    padding: 0px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    padding-bottom: 2em;
+  }
+  a{
+    text-decoration: none;
+  }
+  /* .image1{
+    align-items: center;
+  } */
+
+  .values, .team{
+    justify-content: space-around;
+    
+  }
+  
+  .story{
+    text-align: center; 
+    background-color: var(--my-color); 
+    padding: 1vw 5vw 2vw 5vw; 
+    width: fit-content; 
+    width: 25%;
+    margin: auto;
+  }
+  h1{
+    text-align: center;
+  }
+
+  /* pseudo element */
+  a:link{
+    color: var(--my-color1);
+  }
+  a:hover{
+    color: var(--my-color1);
+  }
+  /* for mobile phones */
+  @media only screen and (max-width: 600px){
+    .flex{
+      flex-wrap: wrap;
+    }
+    .image1{
+      margin: auto;
+    }
+
+  }
+  .member img{
+    height: 14vw;
+    /* width: auto; */
+    margin: auto;
+    border-radius: 100%;
+    padding: 2em 2em;
+  }
+  .member .details{
+    text-align: center;
+    line-height: 2;
+  }
+  
+  .member{
+    position: relative;
+    margin: 3vw;
+    /* border: var(--my-color2) 1pt solid; */
+    border-radius: 6px;
+    background-color: var(--mycolor10);
+    /* overflow: visible; */
+    /* overflow-wrap: break-word; */
+  }
+
+  .profile_img{
+    position: relative;
+    text-align: center;
+  }
+
+  .overlay{
+    opacity: 0;
+    position: absolute;   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .overlay a{
+    color: var(--mycolor10);
+    font-weight: 400;
+    font-size: 2.3vw;
+  }
+
+  .profile_img:hover img{
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    /* opacity: 0.2; */
+  }
+
+
+  .member:hover .overlay{
+    opacity: 1;
+  }
+
+  .each_value{
+    width: 12%;
+    background-color: var(--my-color9);
+    border-radius: 30vw 25vw 30vw 12vw;
+    word-wrap: break-word;
+    padding: 4.5vw;
+  }
+  .each_value h2{
+    font-size: 2vw;
+  }
+
+  .each_value p{
+    font-size: 1.6vw;
+  }
+
+
+
+  
+  
