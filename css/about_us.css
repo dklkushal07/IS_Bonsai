@@ -1,7 +1,10 @@
 .flex{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+}
+
+.values, .members{
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .intro{
@@ -38,7 +41,7 @@
   } */
 
   .values, .team{
-    justify-content: space-around;
+    justify-content: space-evenly;
     
   }
   
@@ -72,10 +75,10 @@
 
   }
   .member img{
-    height: 14vw;
+    height: 37vh;
     /* width: auto; */
     margin: auto;
-    border-radius: 100%;
+    border-radius: 50%;
     padding: 2em 2em;
   }
   .member .details{
@@ -105,7 +108,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .overlay a{
+  .overlay{
     color: var(--mycolor10);
     font-weight: 400;
     font-size: 2.3vw;
@@ -123,7 +126,7 @@
   }
 
   .each_value{
-    width: 12%;
+    width: 20%;
     background-color: var(--my-color9);
     border-radius: 30vw 25vw 30vw 12vw;
     word-wrap: break-word;
@@ -137,6 +140,69 @@
     font-size: 1.6vw;
   }
 
+  .popup{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    /* z-index: 1; */
+  }
+
+  .popup .content{
+    height: 80%;
+    width: 60%;
+    background-color: aliceblue;
+    position: relative;
+  }
+  /* .popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: whitesmoke;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .popup .active{
+    opacity: 1;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .content{
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    background-color: white;
+    padding: 2vw;
+  }
+
+  .content .closeBtn{
+    position: absolute;
+    right: 7%;
+    top: 2%;
+    height: 4vw;
+    width: 4vw;
+    background-color: rgb(147, 178, 100);
+    color: black;
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 4vw;
+    border-radius: 50%; 
+  } */
+
+  
+  
+
+  
 
 
   
