@@ -71,6 +71,88 @@ li{
     list-style: none;
 }
 
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.product .product_column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.product .product_column .box{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.product .product_column .box .images img{
+    width: 100%;
+    padding-bottom: 0.5px;
+}
+
+
+.link a{
+    position: relative;
+    padding: 5px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background: #57ba98;
+}
+
+.product#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select:none;
+    -webkit-user-select: none;
+}
+
+#popup a{
+    position: relative;
+    padding: 5px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background: #57ba98;
+}
+#popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: whitesmoke;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.images{
+    padding: 24px;
+    position: relative;
+    display: flex;
+    align-items:flex-start;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+
 @media(max-width: 1024px){
     .hamburger{
         display: block;
