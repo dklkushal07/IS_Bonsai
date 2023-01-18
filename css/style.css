@@ -1,12 +1,24 @@
 :root{
     --par-text: 14px;
     --mid-text: 20px;
+    --my-color1:#081C15;
+    --my-color2:#1B4332;
+    --my-color3:#2D6A4F;
+    --my-color4:#40916C;
+    --my-color5:#52B788;
+    --my-color6:#74C69D;
+    --my-color7:#95D5B2;
+    --my-color8:#B7E4C7;
+    --my-color8:#D8F3DC;
+    --my-color9:#DDEAD1;
+    --mycolor10: #eef1e5;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .nav-bar{
@@ -53,6 +65,10 @@ a{
 
 .nav-bar a:hover{
     color: rgb(103, 16, 16);
+}
+
+li{
+    list-style: none;
 }
 
 
@@ -136,9 +152,6 @@ a{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-li{
-    list-style: none;
-}
 
 @media(max-width: 1024px){
     .hamburger{
