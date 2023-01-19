@@ -18,7 +18,7 @@ class FooterElement extends HTMLElement{
                 <p>Kamalpokhari, Kathmandu</p>
                 <p>Bagmati, 44600, Nepal</p>
                 <p class="email">suvanmagar7@gmail.com</p>
-                <h4>+977 9808253241</h4>
+                <p>+977 9808253241</p>
             </div>
             <div class="col">
                 <h3>Links</h3>
@@ -47,7 +47,7 @@ class FooterElement extends HTMLElement{
             </div>
         </div>
         <hr>
-        <p class="copyright">Armor Co. &copy 2023 - All Rights Reserved</p>
+        <p class="copyright" style="text-align : center;">Armor Co. &copy 2023 - All Rights Reserved</p>
     </footer>
         `
     }
