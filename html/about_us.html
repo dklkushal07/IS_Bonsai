@@ -7,8 +7,9 @@
     <title>About US</title>
     <link rel="stylesheet" href="../css/about_us.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/CV.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="../javascript/"></script>
+    <script type="text/javascript" src="../javascript/about_us.js"></script>
 </head>
 <body>
     <div id="about_us">
@@ -51,7 +52,7 @@
             <div class="members flex">
 
                 <div class="member">
-                    <div class="profile_img">
+                    <div class="profile_img" onclick="popup()">
                         <img src="../images/mars1.jpg" alt="">
                         <p class="overlay">View portfolio</p>
                     </div>
@@ -71,7 +72,7 @@
                     <div class="main">
                         <div class="profile_img">
                             <img src="../images/mars1.jpg" alt="">
-                            <p class="overlay" onclick="popup()">View portfolio</p>
+                            <p class="overlay">View portfolio</p>
                         </div>
                         <div class="details">
                             <div class="name">Lorem, ipsum.</div>
@@ -143,102 +144,102 @@
             </div>
         </div>
     </div>
-    
-    <div class="popup">
-        <div class="content">
-            <div class="cv1">
-                <div class="head">
-                    <h1>Name</h1>
-                    <h3>Lorem, ipsum.</h3>
-                </div>
-                <hr>
-                <div class="flex">
-                    <div class="left-side">
-                        <div class="contact-details" style="background-color: lightgrey; padding: 0 3vw; margin: 2vw;">
-                            <h2>Contact</h2>
-                            <div class="contact flex">
-                                <p>icon</p>
-                                <p>Instagram</p>
-                            </div>
-                            <div class="facebook flex">
-                                <p>icon</p>
-                                <p>Twitter</p>
-                            </div>
-                            <div class="contact flex">
-                                <p>icon</p>
-                                <p>LinkedIn</p>
-                            </div>
-                            <div class="contact flex">
-                                <p>icon</p>
-                                <p>GitHub</p>
-                            </div>
-                        </div>
-                        
-                        <div class="skills">
-                            <h2>Skills</h2>
-                            <ul>
-                                <li>Soft Skills
-                                    <ul>
-                                        <li>Lorem, ipsum.</li>
-                                        <li>Lorem, ipsum.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </li>
-                                <li>Technical Skills
-                                    <ul>
-                                        <li>Lorem, ipsum.</li>
-                                        <li>Lorem, ipsum.</li>
-                                        <li>Lorem, ipsum dolor.</li>
-                                    </ul>
-                                </li>
-            
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="right-side" style="margin-left: 4vw;">
-                        <div class="profile">
-                            <h2>Profile</h2>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quia ducimus nulla id reiciendis alias provident neque nostrum illum. Fugit!</p>
-                        </div>
-                        
-                        <div class="education">
-                            <h2>Educational Background</h2>
-                            <div class="school flex">
-                                <p>date</p>
-                                <p>SEE from school</p>
-                            </div>
-                            <div class="highschool flex">
-                                <p>date</p>
-                                <p>+2/A levels from highschool</p>
-                            </div>
-                            <div class="current flex">
-                                <p>date</p>
-                                <p>Currently studying in college</p>
-                            </div>
-                        </div>
-                    
-                        <div class="volunteer">
-                            <h2>Volunteering</h2>
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                            </ul>
-                        </div>
-                    
-                        <div class="certifications">
-                            <h2>Certifications</h2>
-                            <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum dolor.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </div>
+    <body>
+        <div class="CV-container" id="modal">
+            <div class="head">
+                <button id="closeBtn" onclick="close()">&times;</button>
+                <h1>Name</h1>
+                <h3>Lorem, ipsum.</h3>
             </div>
+            <hr>
+            <div class="flex">
+                <div class="left-side">
+                    <div class="contact-details" style="background-color: lightgrey; padding: 0 3vw; margin: 2vw;">
+                        <h2>Contact</h2>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>Instagram</p>
+                        </div>
+                        <div class="facebook flex">
+                            <p>icon</p>
+                            <p>Twitter</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>LinkedIn</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+                    
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>Soft Skills
+                                <ul>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+                            <li>Technical Skills
+                                <ul>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+        
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="right-side" style="margin-left: 4vw;">
+                    <div class="profile">
+                        <h2>Profile</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quia ducimus nulla id reiciendis alias provident neque nostrum illum. Fugit!</p>
+                    </div>
+                    
+                    <div class="education">
+                        <h2>Educational Background</h2>
+                        <div class="school flex">
+                            <p>date</p>
+                            <p>SEE from school</p>
+                        </div>
+                        <div class="highschool flex">
+                            <p>date</p>
+                            <p>+2/A levels from highschool</p>
+                        </div>
+                        <div class="current flex">
+                            <p>date</p>
+                            <p>Currently studying in college</p>
+                        </div>
+                    </div>
+                
+                    <div class="volunteer">
+                        <h2>Volunteering</h2>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                
+                    <div class="certifications">
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+    <div id="popup"></div>
         </div>
     </div>
 </body>

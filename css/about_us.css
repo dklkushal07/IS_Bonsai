@@ -72,8 +72,8 @@
     .image1{
       margin: auto;
     }
-
   }
+
   .member img{
     height: 37vh;
     /* width: auto; */
@@ -115,12 +115,14 @@
   }
 
   .profile_img:hover img{
-    -webkit-filter: blur(4px);
+    /* -webkit-filter: blur(4px); */
     filter: blur(4px);
     /* opacity: 0.2; */
   }
 
-
+  .member:hover{
+    cursor: pointer;
+  }
   .member:hover .overlay{
     opacity: 1;
   }
@@ -140,19 +142,14 @@
     font-size: 1.6vw;
   }
 
-  .popup{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    /* z-index: 1; */
+  #about_us{
+    pointer-events: all;
   }
 
-  .popup .content{
-    height: 80%;
-    width: 60%;
-    background-color: aliceblue;
-    position: relative;
+  #about_us.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select:none;
   }
   /* .popup{
     position: fixed;
