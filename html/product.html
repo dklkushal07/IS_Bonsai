@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Product</title>
     
 </head>
 <body>
+    <navigation-bar></navigation-bar>
     <div id="blur">
         <div class="product_head" >
             <div class="pro_head_content">
@@ -170,51 +172,9 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="footer_container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>bonsai</h4>
-                    <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">shop</a></li>
-                        <li><a href="#">cart</a></li>
-                        <li><a href="#">log in</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>types</h4>
-                    <ul>
-                        <li><a href="#">moyogi</a></li>
-                        <li><a href="#">fukingashi</a></li>
-                        <li><a href="#">kengai</a></li>
-                        <li><a href="#">chokkan</a></li>
-                        <li><a href="#">shohaku</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <ul>
-                        <li><a href="#">instagram</a></li>
-                        <li><a href="#">facebook</a></li>
-                        <li><a href="#">twitter</a></li>
-                        <li><a href="#">linkedin</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>feedback</h4>
-                    <ul>
-                        <form>
-                            Give your feedback here:<br>
-                            <textarea cols="30" rows="3"></textarea>
-                        </form>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <page-footer></page-footer>
+    <script src="../javascript/nav.js"></script>
+    <script src="../javascript/footer.js"></script>
     <script type="text/javascript">
         function toggle(){
             var blur = document.getElementById('blur');
@@ -223,8 +183,7 @@
             popup.classList.toggle('active');
         }
     </script>
-    <div class="footer">
 
-    </div>
+    
 </body>
 </html>
