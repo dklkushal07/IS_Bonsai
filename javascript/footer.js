@@ -47,7 +47,7 @@ class FooterElement extends HTMLElement{
             </div>
         </div>
         <hr>
-        <p class="copyright" style="text-align : center;">Armor Co. &copy 2023 - All Rights Reserved</p>
+        <p class="copyright" style="text-align : center;">Bonzai Ichiba Co. &copy 2023 - All Rights Reserved</p>
     </footer>
         `
     }
