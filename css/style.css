@@ -14,6 +14,7 @@
     --mycolor10: #eef1e5;
 }
 
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -29,7 +30,6 @@
     background-color: #57ba98;
     font-size: var(--mid-text);
     align-items: center;
-    position: fixed;
 }
 .nav-bar-left{
     display: flex;
