@@ -7,9 +7,9 @@
     <title>About US</title>
     <link rel="stylesheet" href="../css/about_us.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/CV.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="../javascript/about_us.js"></script>
+    <!-- <script type="text/javascript" src="../javascript/about_us.js"></script> -->
+    <script src="../javascript/nav.js"></script>
 </head>
 <body>
     <navigation-bar></navigation-bar>
@@ -148,7 +148,7 @@
     <body>
         <div class="CV-container" id="modal">
             <div class="head">
-                <button id="closeBtn" onclick="close()">&times;</button>
+                <button id="closeBtn">&times;</button>
                 <h1>Name</h1>
                 <h3>Lorem, ipsum.</h3>
             </div>
@@ -240,6 +240,25 @@
                 
             </div>
         </div> 
+
+        <script>
+            function popup(){
+            var about_us = document.getElementById('about_us');
+            about_us.classList.toggle('active');
+            var modal = document.getElementById('modal');
+            modal.classList.toggle('active');
+        }
+        
+        const closeButton = document.getElementById("closeBtn");
+        
+        closeButton.addEventListener("click", close);
+        function close() {
+            document.getElementById('about_us').classList.remove('active');
+            document.getElementById('modal').classList.remove('active');
+        };
+        
+        </script>
+
     <div id="popup"></div>
         </div>
     </div> 
