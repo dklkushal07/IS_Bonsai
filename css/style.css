@@ -14,6 +14,7 @@
     --mycolor10: #eef1e5;
 }
 
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -29,7 +30,6 @@
     background-color: #57ba98;
     font-size: var(--mid-text);
     align-items: center;
-    position: fixed;
 }
 .nav-bar-left{
     display: flex;
@@ -72,86 +72,116 @@ li{
 }
 
 
-.product{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 40px 20px 0 20px;
+.footer{
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, var(--my-color1), var(--my-color2));
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
 }
 
-.product .product_column{
+.row{
+    width: 85%;
+    margin: auto;
     display: flex;
-    flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative ;
+    border-bottom: 3px solid #ccc;
+}
+
+.email{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+    ;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.col ul li a:hover{
+    color: #bbb;
+    padding-left: 10px;
+}
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    color: #bbb;
+    padding-right: 10px;
+}
+
+.col .socials a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    border-bottom: 1px solid #ccc;
     
 }
 
-.product .product_column .box{
-    display: flex;
-    flex-direction: column;
-    width: 32.5%;
+.col .socials a:hover{
+    color: #bbb;
+    padding-left: 10px;
 }
 
-.product .product_column .box .images img{
-    width: 100%;
-    padding-bottom: 0.5px;
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
 }
 
-
-.link a{
-    position: relative;
-    padding: 5px 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    color: white;
-    background: #57ba98;
+.footer p, .footer a{
+    text-align: left;
 }
-
-.product#blur.active{
-    filter: blur(20px);
-    pointer-events: none;
-    user-select:none;
-    -webkit-user-select: none;
-}
-
-#popup a{
-    position: relative;
-    padding: 5px 20px;
-    margin-top: 20px;
-    text-decoration: none;
-    color: white;
-    background: #57ba98;
-}
-#popup{
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    padding: 50px;
-    box-shadow: 0 5px 30px rgba(0,0,0,.30);
-    background: whitesmoke;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-#popup.active{
-    visibility: visible;
-    opacity: 1;
-    transition: 0.5s;
-}
-
-.images{
-    padding: 24px;
-    position: relative;
-    display: flex;
-    align-items:flex-start;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-}
-
 
 @media(max-width: 1024px){
     .hamburger{
