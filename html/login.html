@@ -21,7 +21,7 @@
                         <img src="../images/logo with text.png" alt="" srcset="" height="100px">
                     </div>
                     <div class="form-heading">
-                        <h2>Welcome back</h2>
+                        <h2>Welcome Back!</h2>
                         <h6>Not registered yet?</h6>
                         <a href="#" class="toggle-ls">Sign up</a>
                     </div>
@@ -30,29 +30,61 @@
                             <input type="text" minlength="4" class="input-field" id="username" required>
                             <label for="username">Username</label>
                         </div>
-                        
+
                         <div class="input-wrapper">
                             <input type="password" minlength="4" class="input-field" id="pass" required>
                             <label for="pass">Password</label>
                         </div>
-                        
+
                         <input type="submit" value="Sign In" class="submit-form" />
-                        <p><a href="#" class="reset-pw">Forgot password?</a></p>
+                        <p class="bottom-text"><a href="#" class="reset-pw">Forgot password?</a></p>
+                    </div>
+                </form>
+                <form action="" class="signup-form">
+                    <div id="logo">
+                        <img src="../images/logo with text.png" alt="" srcset="" height="100px">
+                    </div>
+                    <div class="form-heading">
+                        <h2>Get Started!</h2>
+                        <h6>Already have an account?</h6>
+                        <a href="#" class="toggle-ls">Sign in</a>
+                    </div>
+                    <div class="actual-form">
+                        <div class="input-wrapper">
+                            <input type="text" minlength="4" class="input-field" id="username-signup" required>
+                            <label for="username">Username</label>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="email" minlength="4" class="input-field" id="email" required>
+                            <label for="email">Email ID</label>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="password" minlength="4" class="input-field" id="pass-signup" required>
+                            <label for="pass">Password</label>
+                        </div>
+
+                        <input type="submit" onclick="signUp(event)" value="Sign In" class="submit-form" />
+                        <p class="bottom-text">By signing in, I agree to the <a href="#">Terms of Services</a> and <a href="#">Privacy
+                                Policy</a></p>
                     </div>
                 </form>
             </div>
-            <div class="carousel"></div>
+            <div class="carousel">
+                <img src="../images/6.jpg" style="border-radius: 2rem; width: 100%;height: 100%;" alt="">
+            </div>
         </div>
     </div>
     <footer>
         <hr>
-        <p class="copyright" style="text-align : center;">Bonzai Ichiba Co. &copy 2023 - All Rights Reserved</p>
+        <p class="copyright" style="text-align : center;">Shrubs Co. &copy 2023 - All Rights Reserved</p>
     </footer>
     <script src="../javascript/nav.js"></script>
     <script src="../javascript/footer.js"></script>
     <script src="../javascript/login.js"></script>
 
-    
+
 </body>
 
 </html>

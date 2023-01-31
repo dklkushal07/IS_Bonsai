@@ -62,9 +62,8 @@ body::-webkit-scrollbar{
 }
 
 .nav-bar-logo{
-    height: 60px;
+    height: 50px;
     position: relative;
-    top:5px
 }
 .nav-bar-left{
     display: flex;
