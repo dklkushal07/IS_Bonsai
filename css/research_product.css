@@ -1,0 +1,14 @@
+.value img{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.value-content {
+    display: flex;
+}
+
+.value-content img{
+    width: 50%;
+    height: 50%;
+}
