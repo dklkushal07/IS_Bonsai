@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    transform: translateY(120px);
     }
 #technology, #bonsai, #positive, #negative {
     padding: 25% 25% 0 0;
