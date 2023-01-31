@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +11,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script type="text/javascript" src="../javascript/about_us.js"></script> -->
     <script src="../javascript/nav.js"></script>
+    <style>
+        .feedback {
+            border: 1px solid #081C15;
+            border-bottom: none;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .feedback-details {
+            text-align: left;
+            margin: 0 auto;
+        }
+
+        .feedback-details,
+        .feedback-details p {
+            text-align: left;
+        }
+
+        .feedback-details input {
+            border: 1px solid black;
+            height: 30px;
+        }
+
+        .feedback form {
+            padding: 2vw;
+        }
+
+        .feedback input {
+            /* flex-direction: column; */
+            /* outline: auto; */
+            /* outline: 2px; */
+            padding: 2px;
+            margin: 1vw;
+            width: 55vh;
+            color: #081C15;
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="submit"] {
+            background-color: #081C15;
+            color: white;
+            padding: 10px 20px;
+            padding-bottom: 25px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1d4a3a;
+        }
+    </style>
 </head>
+
 <body>
     <navigation-bar></navigation-bar>
     <div id="about_us">
         <div class="intro">
-            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-            <img src="../images/bonsaiPret.jpg" alt="Bonsai">
-        </div>
-
-        <div style="text-align: center; background-color: #65CCB8; padding: 1vw 5vw 2vw 5vw !important; margin: 0 7vw 0 7vw;">
-            <h1>Founding Story</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde aut ratione quae, quaerat vitae fuga, ipsum consequuntur aspernatur incidunt aperiam laboriosam odio magni, deleniti cumque? Saepe dolor beatae quas, voluptate harum cumque consequatur asperiores, molestias ab, nobis enim sunt sed! Exercitationem laudantium magnam cum vel tempore placeat illum molestiae odio!</p>
+            <img src="../images/introImageAbout.jpg" alt="pot">
+            <p class="heading">Filling empty pots with life</p>
+            <p class="sub-heading">Nice to meet you</p>
+            <p class="heading-desc">We believe in Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
+                quisquam</p>
+            <a href="#team"><button class="btn">Our team</button></a>
         </div>
         <div class="our_value">
             <h1>Our Values</h1>
@@ -30,7 +86,7 @@
                     <h2>Creating a bonsai community</h2>
                     <p>Connecting people across the world through a shared passion - Bonsai</p>
                 </div>
-
+                
                 <div class="each_value">
                     <h2>Creating a bonsai community</h2>
                     <p>Connecting people across the world through a shared passion - Bonsai</p>
@@ -47,13 +103,15 @@
                 </div>
             </div>
         </div>
-        <div class="team" style="position: absolute;">
-            <div class="title"><h1>Our Team</h1></div>
+        <div class="team" id="team">
+            <div class="title">
+                <h1>Our Team</h1>
+            </div>
 
             <div class="members flex">
 
                 <div class="member">
-                    <div class="profile_img" onclick="popup()">
+                    <div class="profile_img" onclick="popup(); click1();">
                         <img src="../images/mars1.jpg" alt="">
                         <p class="overlay">View portfolio</p>
                     </div>
@@ -66,31 +124,11 @@
                             <a href="#" class="fa fa-instagram"></a>
                             <a href="#" class="fa fa-github"></a>
                         </div>
-                    </div>             
+                    </div>
                 </div>
 
                 <div class="member">
-                    <div class="main">
-                        <div class="profile_img">
-                            <img src="../images/mars1.jpg" alt="">
-                            <p class="overlay">View portfolio</p>
-                        </div>
-                        <div class="details">
-                            <div class="name">Lorem, ipsum.</div>
-                            <div class="position">Lorem, ipsum.</div>
-                            <div class="social-media">
-                                <a href="#" class="fa fa-facebook"></a>
-                                <a href="#" class="fa fa-twitter"></a>
-                                <a href="#" class="fa fa-instagram"></a>
-                                <a href="#" class="fa fa-github"></a>
-                            </div>
-                        </div>             
-                    </div>
-
-                    </div>
-
-                <div class="member">
-                    <div class="profile_img">
+                    <div class="profile_img" onclick="popup(); click2();">
                         <img src="../images/mars1.jpg" alt="">
                         <p class="overlay">View portfolio</p>
                     </div>
@@ -103,30 +141,11 @@
                             <a href="#" class="fa fa-instagram"></a>
                             <a href="#" class="fa fa-github"></a>
                         </div>
-                    </div>             
-                </div>
-                    
-                    
-
-                <div class="member">
-                    <div class="profile_img">
-                        <img src="../images/mars1.jpg" alt="">
-                        <p class="overlay">View portfolio</p>
                     </div>
-                    <div class="details">
-                        <div class="name">Lorem, ipsum.</div>
-                        <div class="position">Lorem, ipsum.</div>
-                        <div class="social-media">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-github"></a>
-                        </div>
-                    </div>             
                 </div>
 
                 <div class="member">
-                    <div class="profile_img">
+                    <div class="profile_img" onclick="popup(); click3();">
                         <img src="../images/mars1.jpg" alt="">
                         <p class="overlay">View portfolio</p>
                     </div>
@@ -139,16 +158,80 @@
                             <a href="#" class="fa fa-instagram"></a>
                             <a href="#" class="fa fa-github"></a>
                         </div>
-                    </div>             
+                    </div>
+                </div>
+
+
+
+                <div class="member">
+                    <div class="profile_img" onclick="popup(); click4();">
+                        <img src="../images/mars1.jpg" alt="">
+                        <span class="overlay">View portfolio</span>
+                    </div>
+                    <div class="details">
+                        <div class="name">Lorem, ipsum.</div>
+                        <div class="position">Lorem, ipsum.</div>
+                        <div class="social-media">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-github"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member">
+                    <div class="profile_img" onclick="popup(); click5();">
+                        <img src="../images/mars1.jpg" alt="">
+                        <p class="overlay">View portfolio</p>
+                    </div>
+                    <div class="details">
+                        <div class="name">Lorem, ipsum.</div>
+                        <div class="position">Lorem, ipsum.</div>
+                        <div class="social-media">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-github"></a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
+
+        <!-- feedback form -->
+        <div class="feedback">
+            <form>
+                <div class="feedback-details">
+                    <h1>Feedback</h1>
+                    <label for="name">
+                        <p>Your name</p>
+                    </label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+
+                    <label for="email">
+                        <p>Your email</p>
+                    </label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+
+                    <label for="feedback">
+                        <p>Give us your feedback</p>
+                    </label>
+                    <textarea name="" id="feedback" cols="44" rows="10" placeholder="Your feedback" required></textarea>
+                    <input type="submit" value="Submit" id="submitButton">
+                </div>
+            </form>
+        </div>
+
     </div>
-    <body>
-        <div class="CV-container" id="modal">
+
+
+    <div class="CV-container">
+
+        <div id="modal1">
             <div class="head">
-                <button id="closeBtn">&times;</button>
+                <button id="closeBtn" onclick="close()">&times;</button>
                 <h1>Name</h1>
                 <h3>Lorem, ipsum.</h3>
             </div>
@@ -174,7 +257,7 @@
                             <p>GitHub</p>
                         </div>
                     </div>
-                    
+
                     <div class="skills">
                         <h2>Skills</h2>
                         <ul>
@@ -192,17 +275,18 @@
                                     <li>Lorem, ipsum dolor.</li>
                                 </ul>
                             </li>
-        
+
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="right-side" style="margin-left: 4vw;">
                     <div class="profile">
                         <h2>Profile</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quia ducimus nulla id reiciendis alias provident neque nostrum illum. Fugit!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quia ducimus nulla id
+                            reiciendis alias provident neque nostrum illum. Fugit!</p>
                     </div>
-                    
+
                     <div class="education">
                         <h2>Educational Background</h2>
                         <div class="school flex">
@@ -218,7 +302,7 @@
                             <p>Currently studying in college</p>
                         </div>
                     </div>
-                
+
                     <div class="volunteer">
                         <h2>Volunteering</h2>
                         <ul>
@@ -227,7 +311,7 @@
                             <li>Lorem, ipsum dolor.</li>
                         </ul>
                     </div>
-                
+
                     <div class="certifications">
                         <h2>Certifications</h2>
                         <ul>
@@ -237,31 +321,469 @@
                         </ul>
                     </div>
                 </div>
-                
             </div>
-        </div> 
+        </div>
 
-        <script>
-            function popup(){
+        <div id="modal2">
+            <div class="head">
+                <button id="closeBtn" onclick="close()">&times;</button>
+                <h1>Name</h1>
+                <h3>Lorem, ipsum.</h3>
+            </div>
+            <hr>
+            <div class="flex">
+                <div class="left-side">
+                    <div class="contact-details" style="background-color: lightgrey; padding: 0 3vw; margin: 2vw;">
+                        <h2>Contact</h2>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>Instagram</p>
+                        </div>
+                        <div class="facebook flex">
+                            <p>icon</p>
+                            <p>Twitter</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>LinkedIn</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>Soft Skills
+                                <ul>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+                            <li>Technical Skills
+                                <ul>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-side" style="margin-left: 4vw;">
+                    <div class="profile">
+                        <h2>Profile</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quia ducimus nulla id
+                            reiciendis alias provident neque nostrum illum. Fugit!</p>
+                    </div>
+
+                    <div class="education">
+                        <h2>Educational Background</h2>
+                        <div class="school flex">
+                            <p>date</p>
+                            <p>SEE from school</p>
+                        </div>
+                        <div class="highschool flex">
+                            <p>date</p>
+                            <p>+2/A levels from highschool</p>
+                        </div>
+                        <div class="current flex">
+                            <p>date</p>
+                            <p>Currently studying in college</p>
+                        </div>
+                    </div>
+
+                    <div class="volunteer">
+                        <h2>Volunteering</h2>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+
+                    <div class="certifications">
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal3">
+            <div class="head">
+                <button id="closeBtn" onclick="close()">&times;</button>
+                <h1>Name</h1>
+                <h3>Lorem, ipsum.</h3>
+            </div>
+            <hr>
+            <div class="flex">
+                <div class="left-side">
+                    <div class="contact-details" style="background-color: lightgrey; padding: 0 3vw; margin: 2vw;">
+                        <h2>Contact</h2>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>Instagram</p>
+                        </div>
+                        <div class="facebook flex">
+                            <p>icon</p>
+                            <p>Twitter</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>LinkedIn</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>Soft Skills
+                                <ul>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+                            <li>Technical Skills
+                                <ul>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-side" style="margin-left: 4vw;">
+                    <div class="profile">
+                        <h2>Profile</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quia ducimus nulla id
+                            reiciendis alias provident neque nostrum illum. Fugit!</p>
+                    </div>
+
+                    <div class="education">
+                        <h2>Educational Background</h2>
+                        <div class="school flex">
+                            <p>date</p>
+                            <p>SEE from school</p>
+                        </div>
+                        <div class="highschool flex">
+                            <p>date</p>
+                            <p>+2/A levels from highschool</p>
+                        </div>
+                        <div class="current flex">
+                            <p>date</p>
+                            <p>Currently studying in college</p>
+                        </div>
+                    </div>
+
+                    <div class="volunteer">
+                        <h2>Volunteering</h2>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+
+                    <div class="certifications">
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal4">
+            <div class="head">
+                <button id="closeBtn" onclick="close()">&times;</button>
+                <h1>Name</h1>
+                <h3>Lorem, ipsum.</h3>
+            </div>
+            <hr>
+            <div class="flex">
+                <div class="left-side">
+                    <div class="contact-details" style="background-color: lightgrey; padding: 0 3vw; margin: 2vw;">
+                        <h2>Contact</h2>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>Instagram</p>
+                        </div>
+                        <div class="facebook flex">
+                            <p>icon</p>
+                            <p>Twitter</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>LinkedIn</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>Soft Skills
+                                <ul>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+                            <li>Technical Skills
+                                <ul>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-side" style="margin-left: 4vw;">
+                    <div class="profile">
+                        <h2>Profile</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quia ducimus nulla id
+                            reiciendis alias provident neque nostrum illum. Fugit!</p>
+                    </div>
+
+                    <div class="education">
+                        <h2>Educational Background</h2>
+                        <div class="school flex">
+                            <p>date</p>
+                            <p>SEE from school</p>
+                        </div>
+                        <div class="highschool flex">
+                            <p>date</p>
+                            <p>+2/A levels from highschool</p>
+                        </div>
+                        <div class="current flex">
+                            <p>date</p>
+                            <p>Currently studying in college</p>
+                        </div>
+                    </div>
+
+                    <div class="volunteer">
+                        <h2>Volunteering</h2>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+
+                    <div class="certifications">
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal5">
+            <div class="head">
+                <button id="closeBtn" onclick="close()">&times;</button>
+                <h1>Name</h1>
+                <h3>Lorem, ipsum.</h3>
+            </div>
+            <hr>
+            <div class="flex">
+                <div class="left-side">
+                    <div class="contact-details" style="background-color: lightgrey; padding: 0 3vw; margin: 2vw;">
+                        <h2>Contact</h2>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>Instagram</p>
+                        </div>
+                        <div class="facebook flex">
+                            <p>icon</p>
+                            <p>Twitter</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>LinkedIn</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>icon</p>
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>Soft Skills
+                                <ul>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+                            <li>Technical Skills
+                                <ul>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum.</li>
+                                    <li>Lorem, ipsum dolor.</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-side" style="margin-left: 4vw;">
+                    <div class="profile">
+                        <h2>Profile</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quia ducimus nulla id
+                            reiciendis alias provident neque nostrum illum. Fugit!</p>
+                    </div>
+
+                    <div class="education">
+                        <h2>Educational Background</h2>
+                        <div class="school flex">
+                            <p>date</p>
+                            <p>SEE from school</p>
+                        </div>
+                        <div class="highschool flex">
+                            <p>date</p>
+                            <p>+2/A levels from highschool</p>
+                        </div>
+                        <div class="current flex">
+                            <p>date</p>
+                            <p>Currently studying in college</p>
+                        </div>
+                    </div>
+
+                    <div class="volunteer">
+                        <h2>Volunteering</h2>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+
+                    <div class="certifications">
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum.</li>
+                            <li>Lorem, ipsum dolor.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function popup() {
             var about_us = document.getElementById('about_us');
             about_us.classList.toggle('active');
-            var modal = document.getElementById('modal');
-            modal.classList.toggle('active');
+
         }
-        
-        const closeButton = document.getElementById("closeBtn");
-        
-        closeButton.addEventListener("click", close);
+        function click1() {
+            document.getElementById('modal1').classList.toggle('active');
+        }
+        function click2() {
+            document.getElementById('modal2').classList.toggle('active');
+        }
+        function click3() {
+            document.getElementById('modal3').classList.toggle('active');
+        }
+        function click4() {
+            document.getElementById('modal4').classList.toggle('active');
+        }
+        function click5() {
+            document.getElementById('modal5').classList.toggle('active');
+        }
+
+
+        // const closeButton = document.getElementById("closeBtn");
+        // closeButton.addEventListener("click", close);
         function close() {
             document.getElementById('about_us').classList.remove('active');
-            document.getElementById('modal').classList.remove('active');
+            modals = document.querySelectorAll("#modal1,#modal2,#modal3,#modal4,#modal5");
+            // modals.forEach(modal => modal.classList.remove('active'));
+            if (document.getElementById('modal1')) {
+                document.getElementById('modal1').classList.remove('active');
+            }
         };
-        
-        </script>
 
-    <div id="popup"></div>
-        </div>
-    </div> 
-<script src="../javascript/nav.js"></script>
+        document.getElementById("submitButton").addEventListener("click", function(){
+            if (document.getElementById("name").value !== "" && document.getElementById("email").value !== "" && document.getElementById("feedback").value !== "") {
+                alert("Thank you for your feedback!");
+                // messageContainer.innerHTML = 'Thanks for submitting your feedback';
+            } 
+            else {
+                alert("Please fill out all the fields.");
+                // messageContainer.innerHTML = 'Please fill in all the inputs';
+            }
+        });
+//         document.getElementById("form").addEventListener("submit", function(event) {
+//   event.preventDefault();
+//   var inputs = document.querySelectorAll("input");
+//   for (var i = 0; i < inputs.length; i++) {
+//     inputs[i].value = "";
+//   }
+// });
+
+    //     function submitForm(){
+    //         event.preventDefault();
+    //         const name=document.getElementById("name").value;
+    //         const email=document.getElementById("email").value;
+    //         const feedback=document.getElementById("feedback").value;
+        
+    //     if(!name|| !email || !feedback){
+    //         message.innerHTML="Please fill all the fields.";
+    //         message.style.color="red";
+    //     }
+    //     else{
+    //         message.innerHTML="Thank you for your feedback.";
+    //         message.style.color="green";
+    //     }
+    // }
+    </script>
+
+
+    </div>
+    </div>
+
+    <page-footer></page-footer>
+
+    <script src="../javascript/nav.js"></script>
+    <script src="../javascript/footer.js"></script>
+    <script src="../javascript/nav.js"></script>
+    <script type="text/javascript"></script>
 </body>
+
 </html>
