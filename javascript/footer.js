@@ -33,7 +33,7 @@ class FooterElement extends HTMLElement{
             </div>
             <div class="col" style="margin-left: -55px;">
                 <h3>Newsletter</h3>
-                <form>
+                <form class="footer-form">
                     <input type="email" placeholder="Enter your email id" required>
                     <button type="submit">Submit</button>
                 </form>
@@ -47,7 +47,7 @@ class FooterElement extends HTMLElement{
             </div>
         </div>
         <hr>
-        <p class="copyright" style="text-align : center;">Bonzai Ichiba Co. &copy 2023 - All Rights Reserved</p>
+        <p class="copyright" style="text-align : center;">Shrubs Co. &copy 2023 - All Rights Reserved</p>
     </footer>
         `
     }

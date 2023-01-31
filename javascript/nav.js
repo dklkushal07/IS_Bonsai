@@ -10,6 +10,7 @@ class NavBar extends HTMLElement{
                 <li><a href="product.html">Products</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about_us.html">About Us</a></li>
+                <li><a href="research.html">Research</a></li>
             </ul>
             <div class="nav-bar-right">
                 <button onclick="cartActivation()"><a src="../images/cart.png">Cart</a></button>

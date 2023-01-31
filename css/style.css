@@ -130,7 +130,7 @@ ul li a{
     padding-left: 10px;
 }
 
-form{
+.footer-form{
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -138,7 +138,7 @@ form{
     margin-bottom: 50px;
 }
 
-form input{
+.footer-form input{
     width: 100%;
     background: transparent;
     color: #ccc;
@@ -146,7 +146,7 @@ form input{
     outline: none;
 }
 
-form button{
+.footer-form button{
     background: transparent;
     color: #fff;
     border: 0;
@@ -155,7 +155,7 @@ form button{
     transition: all 0.3s ease;
 }
 
-form button:hover{
+.footer-form button:hover{
     color: #bbb;
     padding-right: 10px;
 }
