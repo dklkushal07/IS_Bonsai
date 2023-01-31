@@ -33,15 +33,13 @@ hr{
     width: 425px;
 }
 
-hr .block-image{
-    color: transparent;
-}
 .block-content{
-    
-
+    margin: auto 0;
+    left: 0;
 }
 
 .block-content p{
+    text-align: left;
     font-size: .9rem;
     color: rgb(116, 113, 113);
 }
@@ -49,7 +47,7 @@ hr .block-image{
 .block-content p a{
     font-size: .9rem;
     color: rgb(19, 19, 19);
-    transition: 0.1s ease;
+    transition: 0.01s ease;
 }
 
 .block-content p a:hover{
@@ -60,10 +58,10 @@ hr .block-image{
 .block-header a{
     font-size: 2rem;
     color: black;
-    transition: 0.1s ease;
+    transition: 0.01s ease;
 }
 
 .block-header a:hover{
-    border-bottom: 0.2rem solid black;
+    border-bottom: 0.11rem solid black;
 }
 
