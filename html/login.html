@@ -14,36 +14,43 @@
     <navigation-bar>
     </navigation-bar>
     <div class="main-box">
-    <div class="login-container">
-        <div class="form-wrapper">
-            <form action="">
-                <div id="logo">
-
-                </div>
-                <div id="form-heading">
-                    <p>Welcome back</p>
-                    <p>Not registered yet?</p>
-                    <a href="#" class="toggle-login">Sign up</a>
-                </div>
-                <div class="actual-form">
-                    <input type="text" minlength="4" class="input-field" id="username" required>
-                    <label for="username">Username</label>
-                    <input type="password" minlength="4" class="input-field" id="pass" required>
-                    <label for="pass">Password</label>
-                    <button type="submit" class="submit-form">Sign In</button>
-                    <a href="#" class="reset-pw">Forgot password?</a>
-                </div>
-            </form>
-        </div>
-        <div class="carousel"></div>
+        <div class="login-container">
+            <div class="form-wrapper">
+                <form action="" class="login-form">
+                    <div id="logo">
+                        <img src="../images/logo with text.png" alt="" srcset="" height="100px">
+                    </div>
+                    <div class="form-heading">
+                        <h2>Welcome back</h2>
+                        <h6>Not registered yet?</h6>
+                        <a href="#" class="toggle-ls">Sign up</a>
+                    </div>
+                    <div class="actual-form">
+                        <div class="input-wrapper">
+                            <input type="text" minlength="4" class="input-field" id="username" required>
+                            <label for="username">Username</label>
+                        </div>
+                        
+                        <div class="input-wrapper">
+                            <input type="password" minlength="4" class="input-field" id="pass" required>
+                            <label for="pass">Password</label>
+                        </div>
+                        
+                        <input type="submit" value="Sign In" class="submit-form" />
+                        <p><a href="#" class="reset-pw">Forgot password?</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="carousel"></div>
         </div>
     </div>
-        <footer>
-            <hr>
+    <footer>
+        <hr>
         <p class="copyright" style="text-align : center;">Bonzai Ichiba Co. &copy 2023 - All Rights Reserved</p>
-        </footer>
-        <script src="../javascript/nav.js"></script>
-        <script src="../javascript/footer.js"></script>
+    </footer>
+    <script src="../javascript/nav.js"></script>
+    <script src="../javascript/footer.js"></script>
+    <script src="../javascript/login.js"></script>
 </body>
 
 </html>
