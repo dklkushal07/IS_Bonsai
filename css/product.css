@@ -20,6 +20,7 @@ body{
 }
 
 .pro_head_content{
+    margin-top: 75px;
     width: 98%;
     display: flex;
     align-items: center;
@@ -241,7 +242,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -256,7 +257,7 @@ body{
     transition: 0.5s;
 }
 
-#popup3 a{
+#popup3 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -271,7 +272,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -286,7 +287,7 @@ body{
     transition: 0.5s;
 }
 
-#popup4 a{
+#popup4 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -301,7 +302,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -316,7 +317,7 @@ body{
     transition: 0.5s;
 }
 
-#popup5 a{
+#popup5 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -331,7 +332,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -346,7 +347,7 @@ body{
     transition: 0.5s;
 }
 
-#popup6 a{
+#popup6 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -361,7 +362,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -376,7 +377,7 @@ body{
     transition: 0.5s;
 }
 
-#popup7 a{
+#popup7 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -391,7 +392,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -406,7 +407,7 @@ body{
     transition: 0.5s;
 }
 
-#popup8 a{
+#popup8 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -421,7 +422,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -436,7 +437,7 @@ body{
     transition: 0.5s;
 }
 
-#popup9 a{
+#popup9 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -451,7 +452,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -466,7 +467,7 @@ body{
     transition: 0.5s;
 }
 
-#popup10 a{
+#popup10 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -481,7 +482,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -496,7 +497,7 @@ body{
     transition: 0.5s;
 }
 
-#popup11 a{
+#popup11 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -511,7 +512,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -526,7 +527,7 @@ body{
     transition: 0.5s;
 }
 
-#popup12 a{
+#popup12 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -541,7 +542,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -556,7 +557,7 @@ body{
     transition: 0.5s;
 }
 
-#popup13 a{
+#popup13 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -571,7 +572,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -586,7 +587,7 @@ body{
     transition: 0.5s;
 }
 
-#popup14 a{
+#popup14 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -601,7 +602,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -616,7 +617,7 @@ body{
     transition: 0.5s;
 }
 
-#popup15 a{
+#popup15 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -631,7 +632,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
@@ -646,7 +647,7 @@ body{
     transition: 0.5s;
 }
 
-#popup16 a{
+#popup16 button{
     width: 2rem;
     height: 2rem;
     padding: 0;
@@ -661,7 +662,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 60%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
     background: whitesmoke;
