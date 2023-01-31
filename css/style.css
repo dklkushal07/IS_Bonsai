@@ -14,13 +14,40 @@
     --mycolor10: #eef1e5;
 }
 
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-ExtraBold.ttf);
+    font-weight: extrabold;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-ExtraLight.ttf);
+    font-weight: extralight;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-weight: bold;
+}
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
+/* Webkit-based browsers */
+body::-webkit-scrollbar{
+    display: none;
+  }
 
 .nav-bar{
     display: flex;
