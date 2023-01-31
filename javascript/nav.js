@@ -4,7 +4,7 @@ class NavBar extends HTMLElement{
         this.innerHTML = 
         `
         <nav class="nav-bar">
-        <a href="home.html" src="../images/logo.png" class="nav-bar-logo">LOGO</a>
+        <a href="home.html" height="60px"><img src="../images/logo with text.png" class="nav-bar-logo"></a>
             <ul class="nav-bar-left">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="product.html">Products</a></li>
