@@ -11,23 +11,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .feedback {
-            border: 1px solid #081C15;
+            background-color: white;
             border-bottom: none;
             width: 60%;
-            margin: 0 auto;
+            margin: 20px auto;
+            box-shadow: 0 5px 30px rgb(0 0 0 / 30%);
         }
 
-        .feedback-details {
-            text-align: left;
-            margin: 0 auto;
+        form {
+            text-align: center;
         }
 
-        .feedback-details,
-        .feedback-details p {
-            text-align: left;
-        }
-
-        .feedback-details input {
+        .feedback input {
             border: 1px solid black;
             height: 30px;
         }
@@ -37,15 +32,10 @@
         }
 
         .feedback input {
-            /* flex-direction: column; */
-            /* outline: auto; */
-            /* outline: 2px; */
             padding: 2px;
             margin: 1vw;
             width: 55vh;
             color: #081C15;
-            display: flex;
-            flex-direction: column;
         }
 
         input[type="submit"] {
@@ -57,7 +47,6 @@
             border-radius: 4px;
             cursor: pointer;
             width: fit-content;
-            margin: 0 auto;
         }
 
         input[type="submit"]:hover {
@@ -69,14 +58,31 @@
 <body>
     <navigation-bar></navigation-bar>
     <div id="about_us">
-        <div class="intro">
-            <img src="../images/introImageAbout.jpg" alt="pot">
-            <ptclass="heading">Filling empty pots with life</p>
-            <p class="sub-heading">Nice to meet you</p>
-            <p class="heading-desc">We believe in Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum,
-                quisquam</p>
-            <a href="#team"><button class="btn">Our team</button></a>
+        <div class="aboutus-block">
+            <div class="aboutus-content">
+                <div class="aboutus-header">
+                    <h1>What do you think About Us?</h1>
+                    <a href="#team">
+                        <p style="color: aliceblue;">MEET OUR TEAM</p>
+                    </a>
+                </div>
+            </div>
+            <div class="aboutus-image">
+                <img src="../images/team.png">
+            </div>
         </div>
+
+        <div class="founding flex" style="margin: 0 auto;">
+            <div class="left" style="width: 30%; margin-left: 25vw;">
+                <h1>Founding Story</h1>
+            </div>
+            <div class="right">
+                <p style="width: 60%; margin-left: 2vw;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Itaque suscipit dolore tempora provident illo, numquam, commodi veritatis consequatur delectus enim
+                    minus deserunt, fugiat eligendi voluptate iste non ratione labore atque!</p>
+            </div>
+        </div>
+
         <div class="our_value">
             <h1>Our Values</h1>
             <div class="flex values">
@@ -84,7 +90,7 @@
                     <h2>Creating a bonsai community</h2>
                     <p>Connecting people across the world through a shared passion - Bonsai</p>
                 </div>
-                
+
                 <div class="each_value">
                     <h2>Creating a bonsai community</h2>
                     <p>Connecting people across the world through a shared passion - Bonsai</p>
@@ -201,26 +207,26 @@
         <!-- feedback form -->
         <div class="feedback">
             <form>
-                <div class="feedback-details">
-                    <h1>Feedback</h1>
-                    <label for="name">
-                        <p>Your name</p>
-                    </label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
+                <h1>Feedback</h1>
+                <label for="name">
+                    <p>Your name</p>
+                </label>
+                <input type="text" id="name" placeholder="Enter your name" required>
 
-                    <label for="email">
-                        <p>Your email</p>
-                    </label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="email">
+                    <p>Your email</p>
+                </label>
+                <input type="email" id="email" placeholder="Enter your email" required>
 
-                    <label for="feedback">
-                        <p>Give us your feedback</p>
-                    </label>
-                    <textarea name="" id="feedback" cols="44" rows="10" placeholder="Your feedback" required></textarea>
-                    <input type="submit" value="Submit" id="submitButton">
-                </div>
-            </form>
+                <label for="feedback">
+                    <p>Give us your feedback</p>
+                </label>
+                <textarea name="" id="feedback" cols="44" rows="10" placeholder="Your feedback" required></textarea>
+                <p><input type="submit" value="Submit" id="submitButton"></p>
+
         </div>
+        </form>
+    </div>
 
     </div>
 
@@ -722,12 +728,22 @@
         function click5() {
             document.getElementById('modal5').classList.toggle('active');
         }
-        
-        function close1(){
+
+        function close1() {
             document.getElementById('about_us').classList.remove('active');
             document.getElementById('modal1').classList.remove('active');
         }
 
+        document.getElementById("submitButton").addEventListener("click", function () {
+            if (document.getElementById("name").value !== "" && document.getElementById("email").value !== "" && document.getElementById("feedback").value !== "") {
+                alert("Thank you for your feedback!");
+                // messageContainer.innerHTML = 'Thanks for submitting your feedback';
+            }
+            else {
+                alert("Please fill out all the fields.");
+                // messageContainer.innerHTML = 'Please fill in all the inputs';
+            }
+        });
     </script>
 
 
