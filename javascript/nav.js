@@ -19,7 +19,7 @@ class NavBar extends HTMLElement {
                     </div>
                     <div id="logout">
                         <button onclick="logOut()" >
-                            <img src="../images/icons/logout.svg" height="30px">
+                            <img src="../images/icons/logout.svg">
                             </img>
                         </button>
                     </div>
@@ -76,7 +76,7 @@ logOut = () => {
     if (confirm("Do you really want to sign out?") == true) {
         localStorage.setItem("login-status", "no");
         userNav.classList.remove('hasUser')
-        loginUserToggle.innerHTML = `<a href="login.html">Login</a>`;
+        loginUserToggle.innerHTML = `<button onclick="reDirToLogin()">LOGIN</button>`;
     }
 }
 
