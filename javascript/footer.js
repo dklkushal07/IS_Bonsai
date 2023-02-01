@@ -17,8 +17,8 @@ class FooterElement extends HTMLElement{
                 <p>Kamal Marg</p>
                 <p>Kamalpokhari, Kathmandu</p>
                 <p>Bagmati, 44600, Nepal</p>
-                <p class="email">suvanmagar7@gmail.com</p>
-                <p>+977 9808253241</p>
+                <p class="email">contact@shrubs.com</p>
+                <p>+977 9808638249</p>
             </div>
             <div class="col">
                 <h3>Links</h3>

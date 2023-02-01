@@ -1,6 +1,10 @@
 .flex{
     display: flex;
 }
+
+.research_head{
+    margin: 5rem;
+}
 .research_head p{
     margin-left:65px;
     font-size: 0.9rem;
@@ -42,6 +46,7 @@ a:hover{
     left:20%;
 } */
 ul{
+    margin-top: 30px;
     list-style: none;
 }
 a{
@@ -57,9 +62,11 @@ a{
     position: sticky;
     top: 10%;
     max-width: 30%;
+    border-top: 2px rgb(214, 213, 213) solid;
+    max-width: 350px;
     border-bottom: 2px black solid;
-    max-width: 270px;
-    margin-right: 0;
+    max-width: 350px;
+    margin-left: 5rem;
     padding-right: 0;
 }
 .lists li{
@@ -74,9 +81,13 @@ a{
 }
 .list-desc{
     margin-left: 35vw;
+
 }
 .value li{
     list-style-type: disc;
+=======
+    margin-right: 10vw;
+
 }
 /* .research-intro img{
     width: 100%;
