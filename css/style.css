@@ -77,6 +77,16 @@ body::-webkit-scrollbar{
     justify-content: space-between
 }
 
+#logout{
+    display: none;
+    pointer-events: none;
+}
+
+.nav-bar-right.hasUser #logout{
+    display: inline;
+    pointer-events: all;
+}
+
 .hamburger{
     display: none;
     cursor: pointer;
@@ -337,7 +347,7 @@ hr{
 }
 
 
-@media(max-width: 1024px){
+/* @media(max-width: 1024px){
     .hamburger{
         display: block;
     }
@@ -372,4 +382,4 @@ hr{
     .nav-bar-left.active{
         left:0%
     }
-}
+} */

@@ -17,40 +17,63 @@ toggleList.forEach(toggleButton => {
     });
 });
 
-// const signUp = e => {
-//     let usernameInput = document.getElementById('username-signup').value,
-//         emailInput = document.getElementById('email').value,
-//         passInput = document.getElementById('pass-signup').value;
 
-//     let formData = JSON.parse(localStorage.getItem('formData')) || [];
 
-//     let exist = formData.length && 
-//         JSON.parse(localStorage.getItem('formData')).some(data => 
-//             data.usernameInput == usernameInput
-//         );
+const signUp = e => {
+    let usernameInput = document.getElementById('username-signup').value,
+        emailInput = document.getElementById('email').value,
+        passInput = document.getElementById('pass-signup').value;
 
-//     if(!exist){
-//         formData.push({ usernameInput, emailInput, passInput });
-//         localStorage.setItem('formData', JSON.stringify(formData));
-//         // document.querySelector('form').reset();
-//         alert("Account Created");
-//     }
-//     else{
-//         alert("The username is taken!");
-//     }
-//     e.preventDefault();
-// }
+    function formValid(){
+        if (usernameInput.length<4) {
+            alert("The username must be at least 4 characters!")
+            return false
+        }      
+        if (passInput.length<4) {
+            alert("The password must be at least 4 characters!")
+            return false
+        }
+        if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput)) {
+            alert('Please enter a valid email address!');
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
 
-// function signIn(e) {
-//     let email = document.getElementById('email').value, pwd = document.getElementById('pwd').value;
-//     let formData = JSON.parse(localStorage.getItem('formData')) || [];
-//     let exist = formData.length && 
-//     JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == email && data.pwd.toLowerCase() == pwd);
-//     if(!exist){
-//         alert("Incorrect login credentials");
-//     }
-//     else{
-//         location.href = "/";
-//     }
-//     e.preventDefault();
-// }
+    let formData = JSON.parse(localStorage.getItem('formData')) || [];
+
+    let exist = formData.length && 
+        JSON.parse(localStorage.getItem('formData')).some(data => 
+            data.usernameInput == usernameInput
+        );
+    if(!exist && formValid()){
+        formData.push({ usernameInput, emailInput, passInput });
+        localStorage.setItem('formData', JSON.stringify(formData));
+        document.querySelector('.signup-form').reset();
+        alert("Account Created");
+        theContainer.classList.toggle("signup-mode");
+    }
+    else{
+        if (exist){alert("The username is taken!");}
+    }
+    e.preventDefault();
+}
+
+function signIn(e) {
+    let username = document.getElementById('username').value, pass = document.getElementById('pass').value;
+    let formData = JSON.parse(localStorage.getItem('formData')) || [];
+    let exist = formData.length && 
+    JSON.parse(localStorage.getItem('formData')).some(data => data.usernameInput == username && data.passInput == pass);
+    if(!exist){
+        alert("Incorrect login credentials");
+    }
+    else{
+        localStorage.setItem('login-status','yes');
+        localStorage.setItem('local-username',JSON.stringify(username))
+        alert("Logged in successfully!") ;
+        location.replace('/html/home.html');
+    }
+    e.preventDefault();
+}
