@@ -16,7 +16,7 @@
     <div class="main-box">
         <div class="login-container">
             <div class="form-wrapper">
-                <form action="" class="login-form">
+                <form action="" class="login-form" autocomplete="off">
                     <div id="logo">
                         <img src="../images/logo with text.png" alt="" srcset="" height="100px">
                     </div>
@@ -27,20 +27,20 @@
                     </div>
                     <div class="actual-form">
                         <div class="input-wrapper">
-                            <input type="text" minlength="4" class="input-field" id="username" required>
+                            <input type="text" autocomplete="off" minlength="4" class="input-field" id="username" required>
                             <label for="username">Username</label>
                         </div>
 
                         <div class="input-wrapper">
-                            <input type="password" minlength="4" class="input-field" id="pass" required>
+                            <input type="password" autocomplete="off" minlength="4" class="input-field" id="pass" required>
                             <label for="pass">Password</label>
                         </div>
 
-                        <input type="submit" value="Sign In" class="submit-form" />
+                        <input type="submit" onclick="signIn(event)" autocomplete="off" value="Sign In" class="submit-form" />
                         <p class="bottom-text"><a href="#" class="reset-pw">Forgot password?</a></p>
                     </div>
                 </form>
-                <form action="" class="signup-form">
+                <form action="" class="signup-form" id="signup-form" autocomplete="off">
                     <div id="logo">
                         <img src="../images/logo with text.png" alt="" srcset="" height="100px">
                     </div>
@@ -51,18 +51,18 @@
                     </div>
                     <div class="actual-form">
                         <div class="input-wrapper">
-                            <input type="text" minlength="4" class="input-field" id="username-signup" required>
-                            <label for="username">Username</label>
+                            <input type="text" autocomplete="off"  class="input-field" id="username-signup">
+                            <label for="username-signup">Username</label>
                         </div>
 
                         <div class="input-wrapper">
-                            <input type="email" minlength="4" class="input-field" id="email" required>
+                            <input type="email" autocomplete="off"  class="input-field" id="email">
                             <label for="email">Email ID</label>
                         </div>
 
                         <div class="input-wrapper">
-                            <input type="password" minlength="4" class="input-field" id="pass-signup" required>
-                            <label for="pass">Password</label>
+                            <input type="password" autocomplete="off" class="input-field" id="pass-signup">
+                            <label for="pass-signup">Password</label>
                         </div>
 
                         <input type="submit" onclick="signUp(event)" value="Sign In" class="submit-form" />
