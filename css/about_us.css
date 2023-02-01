@@ -54,37 +54,6 @@
   font-size: larger;
 }
 
-
-/* .btn {
-  position: absolute;
-  top: 65%;
-  left: 20%;
-  background-color: #fff;
-  padding: 0.8vw 1.3vw;
-  color: #000;
-  font-size: 1.8vw;
-  text-align: center;
-  cursor: pointer;
-} */
-
-/* .values img-container{
-  width: 30%;
-}
-.values img{
-  width: 30%;
-  height: 100%;
-  position: sticky;
-  margin: 2vw;
-  margin-right: 3vw;
-  position: fixed;
-}
-
-.values-desc h2, .values-desc p{
-  text-align: left;
-  line-height: 4vw;
-} */
-
-
 .members {
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -102,10 +71,6 @@
 a {
   text-decoration: none;
 }
-
-/* .image1{
-    align-items: center;
-  } */
 
 .team {
   position: relative;
@@ -140,7 +105,6 @@ a:hover {
 
 .member img {
   height: 37vh;
-  /* width: auto; */
   margin: auto;
   border-radius: 50%;
   padding: 2em 2em;
@@ -154,11 +118,8 @@ a:hover {
 .member {
   position: relative;
   margin: 5vw;
-  /* border: var(--my-color2) 1pt solid; */
   border-radius: 6px;
   background-color: var(--mycolor10);
-  /* overflow: visible; */
-  /* overflow-wrap: break-word; */
 }
 
 .profile_img {
@@ -218,12 +179,9 @@ a:hover {
 
 #about_us.active {
   filter: blur(10px);
-  pointer-events: none;
-  user-select: none;
 }
 
 .CV-container {
-  /* position: absolute; */
   z-index: 2;
 }
 
@@ -240,7 +198,7 @@ a:hover {
   padding-left: 6vw;
 }
 
-.CV-container #closeBtn {
+.CV-container .closeBtn {
   cursor: pointer;
   position: absolute;
   right: 6%;
@@ -256,11 +214,7 @@ a:hover {
   /* text-decoration: none; */
 }
 
-#modal1,
-#modal2,
-#modal3,
-#modal4,
-#modal5 {
+.modal {
   position: absolute;
   /* transform: translate(0%,0%) scale(0); */
   margin: 0 auto;
@@ -285,11 +239,7 @@ a:hover {
   top: 210%;
 }
 
-#modal1.active,
-#modal2.active,
-#modal3.active,
-#modal4.active,
-#modal5.active {
+.modal.active{
   /* transform: translate(0%,0%) scale(1); */
   /* display: block; */
   opacity: 1;
