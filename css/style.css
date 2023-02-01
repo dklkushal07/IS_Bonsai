@@ -86,8 +86,11 @@ body::-webkit-scrollbar{
     border-radius: 0.2rem;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     /* box-sizing: content-box; */
 }
+
+
 
 #cart button{
     width: 100%;
@@ -111,8 +114,10 @@ body::-webkit-scrollbar{
 }
 
 .login-logout .login-user{
-    width: 170px;
+    min-width: 170px;
     text-align: center;
+    font-size: var(--mid-text);
+    color: #fff;
 }
 
 .login-logout .login-user button{
@@ -124,6 +129,24 @@ body::-webkit-scrollbar{
     font-size: var(--mid-text);
     font-weight: 600;
 }
+
+.login-logout #logout{
+    height: 100%;
+}
+
+.login-logout #logout button{
+    background-color:#ddc6b6 ;
+    border-style: none;
+    border-radius: 0.2rem;
+    height: 100%;
+    margin: 0 2px;
+}
+
+.login-logout #logout button img{
+    height:30px;
+    margin: 0 2px;
+}
+
 
 .nav-bar-right.hasUser #logout{
     display: inline;
