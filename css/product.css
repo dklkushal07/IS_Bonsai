@@ -15,7 +15,8 @@
 }
 
 body{
-    background-color: #f6f6f6;
+    background-color: #faf9f8;;
+   
 }
 
 .pro_head_content{
@@ -41,12 +42,11 @@ body{
 }
 
 .product_content{
-    align-items: center;
     margin: 50px;
 }
 
 .product_content h1{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .product_content p{
@@ -58,7 +58,7 @@ body{
     padding: 13px 30px;
     text-decoration: none;
     color: white;
-    background: #57ba98;
+    background: #262223;
     font-size: larger;
 }
 
@@ -101,12 +101,14 @@ body{
 }
 
 .grid:hover h2{
-    color: #37604f;
+    color: #302121;
 }
 .grid h4{
+    text-transform: uppercase;
+    font-weight: 15;
     margin-top: 5px;
     font-family: 'Poppins', sans-serif;
-    color: #1e1f1f;
+    color: #6c6c6c;
     margin-bottom: 25px;
 }
 
@@ -139,7 +141,7 @@ body{
     margin-top: 20px;
     text-decoration: none;
     color: white;
-    background: #57ba98;
+    background: #262223;
     font-size: larger;
     transition: .5s ease;
     opacity: 0;
@@ -179,6 +181,7 @@ body{
 .product_detail .detail-content{
     display: grid;
     align-items: center;
+    text-align: center;
     margin-left: 15px;
 }
 
@@ -193,7 +196,11 @@ body{
     margin-top: 20px;
     text-decoration: none;
     color: white;
-    background: #57ba98;
+    background: #262223;
+}
+.rating img{
+    height: 5%;
+    width: 5%;
 }
 
 #popup1 button{
@@ -685,7 +692,7 @@ body{
 
 .product-footer h2{
     margin: 40px;
-    align-items: center;
+    text-align: center;
 }
 
 .product-footer table td img{
@@ -699,4 +706,5 @@ body{
 
 .product-footer table td p{
     margin-top: 10px;
+    text-align: center;
 }

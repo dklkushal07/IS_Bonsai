@@ -109,7 +109,7 @@ li{
 .footer{
     width: 100%;
     bottom: 0;
-    background: linear-gradient(to right, var(--my-color1), var(--my-color2));
+    background: linear-gradient(to right,#181717, #262223 );
     color: #fff;
     padding: 100px 0 30px;
     border-top-left-radius: 125px;

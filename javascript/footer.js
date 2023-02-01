@@ -6,11 +6,10 @@ class FooterElement extends HTMLElement{
         <footer class="footer">
         <div class="row">
             <div class="col">
-                <h3>logo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Dicta nemo, id possimus ea culpa saepe ullam! Quisquam hic 
-                    iusto, facere ab nobis a? Aspernatur eveniet itaque libero
-                     aut unde! Dolore.</p>
+                <h3>SHRUBS</h3>
+                <p>Shrubs is a bonsai plant website that offers a wide selection of high-quality
+                bonsai trees and accessories. With a focus on customer satisfaction, Shrubs is
+                dedicated to providing a user-friendly shopping experience for bonsai enthusiasts of all levels.</p>
             </div>
             <div class="col" style="margin-left: 45px;">
                 <h3>Office</h3>
@@ -27,7 +26,7 @@ class FooterElement extends HTMLElement{
                     <li><a href="about_us.html">about us</a></li>
                     <li><a href="blog.html">blog</a></li>
                     <li><a href="product.html">shop</a></li>
-                    <li><a href="cart.html">cart</a></li>
+                    <li><a href="research.html">research</a></li>
                     <li><a href="login.html">log in</a></li>
                 </ul>
             </div>
