@@ -56,6 +56,7 @@ body::-webkit-scrollbar{
     height: 70px;
     background-color: #262223;
     font-size: var(--mid-text);
+    font-weight: 600;
     align-items: center;
     position: fixed;
     z-index: 100;
@@ -68,18 +69,60 @@ body::-webkit-scrollbar{
 .nav-bar-left{
     display: flex;
     justify-content: space-between;
+    margin-top: 12px;
     gap: 60px;
 }
 
+
 .nav-bar-right{
     display: flex;
-    gap:60px;
+    gap: 20px;
     justify-content: space-between
+}
+
+.login-logout{
+    background-color: #05472a;
+    padding: 5px;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    /* box-sizing: content-box; */
+}
+
+#cart button{
+    width: 100%;
+    height: 100%;
+    background-color: #262223;
+    border-style: none;
+    color: #fff;
+    font-size: var(--mid-text);
+    font-weight: 600;
+}
+
+#cart{
+    border: #cccccc solid 2px;
+    width: 170px;
+    border-radius: 0.2rem;
 }
 
 #logout{
     display: none;
     pointer-events: none;
+}
+
+.login-logout .login-user{
+    width: 170px;
+    text-align: center;
+}
+
+.login-logout .login-user button{
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    background-color: #05472a;
+    color: #ffffff;
+    font-size: var(--mid-text);
+    font-weight: 600;
 }
 
 .nav-bar-right.hasUser #logout{

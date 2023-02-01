@@ -4,7 +4,7 @@ class NavBar extends HTMLElement {
         this.innerHTML =
             `
         <nav class="nav-bar">
-        <a href="home.html" height="60px"><img src="../images/logo with text.png" class="nav-bar-logo"></a>
+        <a href="home.html" height="60px"><img src="../images/logo with text off white.png" class="nav-bar-logo"></a>
             <ul class="nav-bar-left">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="product.html">Products</a></li>
@@ -13,9 +13,17 @@ class NavBar extends HTMLElement {
                 <li><a href="research.html">Research</a></li>
             </ul>
             <div class="nav-bar-right">
-            <div id="cart"><button onclick="cartActivation()"><a src="../images/cart.png">Cart</a></button></div>
-                <div class="login-user"><a href="login.html">Login</a></div>
-                <div id="logout"><button onclick="logOut()" ><img src="../images/icons/logout.svg" height="30px"></img></button></div>
+            <div id="cart"><button onclick="cartActivation()">CART</button></div>
+                <div class="login-logout">
+                    <div class="login-user"><button onclick="reDirToLogin()">LOGIN</button>
+                    </div>
+                    <div id="logout">
+                        <button onclick="logOut()" >
+                            <img src="../images/icons/logout.svg" height="30px">
+                            </img>
+                        </button>
+                    </div>
+                </div>
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -66,10 +74,14 @@ if (loginStatus == "yes") {
 
 logOut = () => {
     if (confirm("Do you really want to sign out?") == true) {
-        localStorage.setItem("login-status","no");
+        localStorage.setItem("login-status", "no");
         userNav.classList.remove('hasUser')
         loginUserToggle.innerHTML = `<a href="login.html">Login</a>`;
     }
+}
+
+reDirToLogin = () => {
+    window.location.href="login.html";
 }
 
 // cart
