@@ -73,7 +73,7 @@ function signIn(e) {
         localStorage.setItem('login-status','yes');
         localStorage.setItem('local-username',JSON.stringify(username))
         alert("Logged in successfully!") ;
-        location.replace('/IS_Bonsai/html/home.html');
+        location.replace('../html/home.html');
     }
     e.preventDefault();
 }

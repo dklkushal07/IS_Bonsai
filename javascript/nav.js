@@ -82,11 +82,11 @@ let logOut = () => {
 
 
 let reDirToLogin = () => {
-    window.location.href="/IS_Bonsai/html/login.html";
+    window.location.href="../html/login.html";
 }
 
 let sendToHome = () => {
-    window.location.href="/IS_Bonsai/html/home.html";
+    window.location.href="../html/home.html";
 }
 
 

@@ -134,6 +134,11 @@ body::-webkit-scrollbar{
 
 .login-logout:hover .login-user button{
     background-color: #fff;
+    color: #05472a;
+}
+
+.login-logout:hover .login-user{
+    color: #05472a;
 }
 
 .login-logout:hover{
