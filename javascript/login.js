@@ -17,7 +17,7 @@ toggleList.forEach(toggleButton => {
     });
 });
 
-
+localStorage.setItem('login-status',"no");
 
 const signUp = e => {
     let usernameInput = document.getElementById('username-signup').value,
