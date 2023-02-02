@@ -43,19 +43,29 @@ h1 {
   background: #262223;
   font-size: larger;
 }
+
+/* setting max width of the class our_value to 87% and centering it vertically using margin */
 .our_value{
   max-width: 87%;
   margin: 0 auto;
 }
+
+/* setting margin-top of class our_value and team to 100px  */
 .our_value, .team{
   margin-top: 100px;
 }
+
+
 .our_value h1, .team h1, .feedback h1{
   margin-bottom: 50px;
 }
+
+
 .values, .members{
   justify-content: space-evenly;
 }
+
+
 .each_value {
   width: 30%;
   margin: 0 2vw 2vw 2vw;
@@ -66,17 +76,22 @@ h1 {
   display: flex;
   align-items: center;
 }
+
+
 .each_value h2 {
   font-size: 2vw;
 }
+
 
 .each_value p {
   font-size: 1.6vw;
 }
 
+
 .members{
   flex-wrap: wrap;
 }
+
 
 .fa {
   padding: 0px;
@@ -87,9 +102,11 @@ h1 {
   padding-bottom: 2em;
 }
 
+
 a {
   text-decoration: none;
 }
+
 
 .team {
   position: relative;
