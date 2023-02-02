@@ -120,7 +120,6 @@ body{
 
 #tech-text img{
     width:100%;
-    
 }
 
 #tech-text p{
@@ -141,6 +140,7 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 10rem;
+    object-fit: cover;
 }
 
 .person{
