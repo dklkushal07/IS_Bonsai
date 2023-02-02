@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Aayesha,Kushal,Pakiza,Samir,Suvan" content="Islington">
+    <meta name="About us" content="HTML,CSS,Javascript">
     <title>About US</title>
     <link rel="stylesheet" href="../css/about_us.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- internal css -->
     <style>
         .feedback {
             background-color: white;
@@ -39,17 +43,18 @@
             color: #081C15;
         }
 
+        /* adding css to the submit button of feedback form */
         input[type="submit"] {
             background-color: #262223;
             color: white;
-            padding: 10px 20px;
-            padding-bottom: 25px;
+            padding: 10px 20px 25px 20px;
             border: none;
             border-radius: 4px;
-            cursor: pointer;
+            cursor: pointer; /*changing arrow cursor to pointer indicating the clickability of item */
             width: fit-content;
         }
 
+        /* changing the effect of submit button while hovering */
         input[type="submit"]:hover {
             background-color: #cccccc;
             color: #262223;
@@ -58,14 +63,19 @@
 </head>
 
 <body>
+    <!-- adding navigation bar -->
     <navigation-bar></navigation-bar>
+
+    <!-- the entire elements of page -->
     <div id="about_us">
+
+        <!-- introduction part of about us page -->
         <div class="aboutus-block flex">
             <div class="aboutus-content">
                 <div class="aboutus-header">
                     <h1 style="text-align: left;">Nice to meet you!</h1>
-                    <h2  style="margin-bottom: 1.7vw;">We are Shrubs.</h2>
-                        <h3>We believe in the beauty and connection with nature that bonsai provides.</h3>
+                    <h2 style="margin-bottom: 1.7vw;">We are Shrubs.</h2>
+                    <h3>We believe in the beauty and connection with nature that bonsai provides.</h3>
                     <a href="#team">
                         <p style="color: aliceblue;">MEET OUR TEAM</p>
                     </a>
@@ -76,15 +86,24 @@
             </div>
         </div>
 
+        <!-- founding story -->
         <div class="founding flex" style="margin: 0 auto;">
             <div class="left" style="width: 30%; margin-left: 25vw;">
                 <h1>Founding Story</h1>
             </div>
             <div class="right">
-                <p style="width: 60%; margin-left: 2vw; line-height: 2vw; text-align: justify;">Shrubs was founded in 2023 by a group of bonsai enthusiasts who were passionate about sharing their love of bonsai with others. They saw a need for a platform that would make it easy for people to learn about bonsai and buy high-quality bonsai trees. At Shrubs, we are committed to promoting the bonsai culture and making it accessible to everyone. We offer a wide range of bonsai trees, all carefully selected for their quality and value. So if you're looking to buy a bonsai tree, connect with other bonsai enthusiasts, Shrubs is the place to be. Join us today and be part of a growing community of bonsai lovers from around the world!</p>
+                <p style="width: 60%; margin-left: 2vw; line-height: 2vw; text-align: justify;">Shrubs was founded in
+                    2023 by a group of bonsai enthusiasts who were passionate about sharing their love of bonsai with
+                    others. They saw a need for a platform that would make it easy for people to learn about bonsai and
+                    buy high-quality bonsai trees. At Shrubs, we are committed to promoting the bonsai culture and
+                    making it accessible to everyone. We offer a wide range of bonsai trees, all carefully selected for
+                    their quality and value. So if you're looking to buy a bonsai tree, connect with other bonsai
+                    enthusiasts, Shrubs is the place to be. Join us today and be part of a growing community of bonsai
+                    lovers from around the world!</p>
             </div>
         </div>
 
+        <!-- our values -->
         <div class="our_value">
             <h1>Our Values</h1>
             <div class="values flex">
@@ -105,6 +124,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- team section  -->
         <div class="team" id="team">
             <div class="title">
                 <h1>Our Team</h1>
@@ -112,13 +133,36 @@
 
             <div class="members flex">
 
+                <!-- 1st team member -->
                 <div class="member">
                     <div class="profile_img" onclick="popup(); click1();">
-                        <img src="../images/mars1.jpg" alt="">
+                        <img src="../images/Samir.jpg" alt="">
                         <p class="overlay">View portfolio</p>
                     </div>
                     <div class="details">
                         <div class="name">Samir Sen</div>
+                        <div class="position">Co-founder</div>
+                        <div class="social-media">
+                            <!-- <a href="#"><img src="../images/facebook-app-symbol.png" alt=""></a>
+                            <a href="#"><img src="../images/facebook-app-symbol.png" alt=""></a>
+                            <a href="#"><img src="../images/facebook-app-symbol.png" alt=""></a>
+                            <a href="#"><img src="../images/facebook-app-symbol.png" alt=""></a> -->
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-github"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd team member -->
+                <div class="member">
+                    <div class="profile_img" onclick="popup(); click2();">
+                        <img src="../images/Suvan_aboutUs.jpg" alt="">
+                        <p class="overlay">View portfolio</p>
+                    </div>
+                    <div class="details">
+                        <div class="name">Suvan Thapa Magar</div>
                         <div class="position">Co-founder</div>
                         <div class="social-media">
                             <a href="#" class="fa fa-facebook"></a>
@@ -129,26 +173,10 @@
                     </div>
                 </div>
 
-                <div class="member">
-                    <div class="profile_img" onclick="popup(); click2();">
-                        <img src="../images/mars1.jpg" alt="">
-                        <p class="overlay">View portfolio</p>
-                    </div>
-                    <div class="details">
-                        <div class="name">Suvan Thapa Magar</div>
-                        <div class="position">Founder</div>
-                        <div class="social-media">
-                            <a href="#" class="fa fa-facebook"></a>
-                            <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-instagram"></a>
-                            <a href="#" class="fa fa-github"></a>
-                        </div>
-                    </div>
-                </div>
-
+                <!-- 3rd team member -->
                 <div class="member">
                     <div class="profile_img" onclick="popup(); click3();">
-                        <img src="../images/mars1.jpg" alt="">
+                        <img src="../images/kushal.jpg" alt="Kushal">
                         <p class="overlay">View portfolio</p>
                     </div>
                     <div class="details">
@@ -163,8 +191,7 @@
                     </div>
                 </div>
 
-
-
+                <!-- 4th team member -->
                 <div class="member">
                     <div class="profile_img" onclick="popup(); click4();">
                         <img src="../images/mars1.jpg" alt="">
@@ -182,9 +209,10 @@
                     </div>
                 </div>
 
+                <!-- 5th team member -->
                 <div class="member">
                     <div class="profile_img" onclick="popup(); click5();">
-                        <img src="../images/mars1.jpg" alt="">
+                        <img src="../images/aayesha.jpg" alt="">
                         <p class="overlay">View portfolio</p>
                     </div>
                     <div class="details">
@@ -228,9 +256,10 @@
 
     </div>
 
-
+    <!-- Portfolio popups for team members -->
     <div class="CV-container">
 
+        <!-- Portfolio popup for 1st member -->
         <div id="modal1" class="modal">
             <div class="head">
                 <button class="closeBtn">&times;</button>
@@ -327,6 +356,7 @@
             </div>
         </div>
 
+        <!-- Portfolio popup for 2nd team member -->
         <div id="modal2" class="modal">
             <div class="head">
                 <button class="closeBtn">&times;</button>
@@ -380,7 +410,8 @@
                 <div class="right-side" style="margin-left: 4vw;">
                     <div class="profile">
                         <h2>Profile</h2>
-                        <p>I am Suvan Thapa Magar. The founder of Shrubs and we welcome you to our website. Hope you have a pleasent experience shoping with us.</p>
+                        <p>I am Suvan Thapa Magar. The founder of Shrubs and we welcome you to our website. Hope you
+                            have a pleasent experience shoping with us.</p>
                     </div>
 
                     <div class="education">
@@ -419,6 +450,7 @@
             </div>
         </div>
 
+        <!-- Portfolio popup for 3rd team member -->
         <div id="modal3" class="modal">
             <div class="head">
                 <button class="closeBtn" onclick="close()">&times;</button>
@@ -514,6 +546,7 @@
             </div>
         </div>
 
+        <!-- Portfolio popup for 4th team member -->
         <div id="modal4" class="modal">
             <div class="head">
                 <button class="closeBtn" onclick="close()">&times;</button>
@@ -576,15 +609,15 @@
                         <h2>Educational Background</h2>
                         <div class="school flex">
                             <p>date</p>
-                            <p>SEE from school</p>
+                            <p>SEE from Galaxy Public School</p>
                         </div>
                         <div class="highschool flex">
                             <p>date</p>
-                            <p>+2/A levels from highschool</p>
+                            <p>+2 Science from Prasadi College</p>
                         </div>
                         <div class="current flex">
                             <p>date</p>
-                            <p>Currently studying in college</p>
+                            <p>Currently studying Computing with AI in Islington College</p>
                         </div>
                     </div>
 
@@ -609,6 +642,7 @@
             </div>
         </div>
 
+        <!-- Portfolio popup for 5th team member -->
         <div id="modal5" class="modal">
             <div class="head">
                 <button class="closeBtn" onclick="close()">&times;</button>
@@ -679,7 +713,7 @@
                         </div>
                         <div class="current flex">
                             <p>2023</p>
-                            <p>Currently studying in Islington college</p>
+                            <p>Currently studying Computing with AI in Islington college</p>
                         </div>
                     </div>
 
@@ -703,8 +737,11 @@
             </div>
         </div>
     </div>
+
+    <!-- internal javascript -->
     <script>
 
+        // JavaScript for opening the popup on click
         function popup() {
             var about_us = document.getElementById('about_us');
             about_us.classList.toggle('active');
@@ -725,7 +762,7 @@
             document.getElementById('modal5').classList.toggle('active');
         }
 
-        // JS for close button
+        // JavaScript for close button of the popup
         const closeButtons = document.querySelectorAll('.closeBtn');
         const modals = document.querySelectorAll('.modal');
         closeButtons.forEach(function (closeButton) {
@@ -737,7 +774,7 @@
             });
         });
 
-        //JS for submit button
+        // JavaScript for form validation of the feedback form
         document.getElementById("submitButton").addEventListener("click", function () {
             if (document.getElementById("name").value !== "" && document.getElementById("email").value !== "" && document.getElementById("feedback").value !== "") {
                 alert("Thank you for your feedback!");

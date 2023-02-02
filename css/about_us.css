@@ -13,36 +13,41 @@
   --my-color9: #DDEAD1;
   --mycolor10: #eef1e5;
 }
-
-
+h1 {
+  text-align: center;
+}
+/* applying the property of flex to display contents horizontally and evenly distributing the items */
 .flex {
   display: flex;
   justify-content: space-between;
 }
 
+/* adding margin, align and padding properties to aboutus-block class */
 .aboutus-block {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0 100px 50px 100px;
   align-items: left;
-  margin-bottom: 50px;
   padding-bottom: 2rem;
   padding-top: 6vw;
 }
 
+/* adding height and width to the image of class aboutus-image */
 .aboutus-image img {
   height: 300px;
   width: 425px;
 }
 
+/* centering the class aboutus-content using margin and setting left to 0 */
 .aboutus-content {
   margin: auto 0;
   left: 0;
 }
 
+/* putting padding-bottom to h1 of class aboutus-header */
 .aboutus-header h1 {
   padding-bottom: 2rem;
 }
 
+setting align-items to center, adding margin-top, padding, width, setting text-decoration to none
 .aboutus-header p {
   align-items: center;
   margin-top: 40px;
@@ -87,14 +92,14 @@
   flex-wrap: wrap;
 }
 
-.fa {
+/* .fa {
   padding: 0px;
   font-size: 30px;
   width: 30px;
   text-align: center;
   border-radius: 50%;
   padding-bottom: 2em;
-}
+} */
 
 a {
   text-decoration: none;
@@ -106,9 +111,7 @@ a {
 
 }
 
-h1 {
-  text-align: center;
-}
+
 
 /* pseudo element */
 a:link {
@@ -192,6 +195,11 @@ a:hover {
   filter: blur(10px);
 }
 
+
+.social-media img{
+  width: 2%;
+  height: 2%;
+}
 .CV-container {
   z-index: 2;
 }
