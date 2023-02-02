@@ -90,6 +90,12 @@ body::-webkit-scrollbar{
     color: #fff;
     font-size: var(--mid-text);
     font-weight: 600;
+    transition: 0.2s ease;
+}
+
+#cart button:hover{
+    background-color: #fff;
+    color: #262223;
 }
 
 #cart{
@@ -119,6 +125,20 @@ body::-webkit-scrollbar{
     font-size: var(--mid-text);
     font-weight: 600;
 }
+
+.login-logout .login-user button:hover{
+    background-color: #fff;
+    color: #05472a;
+}
+
+.login-logout:hover .login-user button{
+    background-color: #fff;
+}
+
+.login-logout:hover{
+    background-color: #fff;
+}
+
 
 .login-logout #logout{
     height: 100%;
@@ -162,9 +182,12 @@ a{
     text-decoration: none;
 }
 
-
+.nav-bar a{
+    transition: 0.1s ease;
+}
 .nav-bar a:hover{
     color: #ddc6b6;
+    border-bottom: 0.1rem solid #ddc6b6;
 }
 
 
