@@ -294,7 +294,7 @@ hr{
     width: 360px;
     min-height: 100vh;
     padding: 20px;
-    background: rgb(255, 255, 255);
+    background: #faf9f8;
     box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
     transition: 0.3s;
     z-index: 100;
@@ -312,7 +312,14 @@ hr{
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
-    margin-top: 25rem;
+    margin-top: 1.5rem;
+}
+
+#cart-close{
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
 }
 
 .cart-box{
@@ -382,16 +389,15 @@ hr{
     margin: 1.5rem auto 0 auto;
     padding: 12px 20px;
     border: none;
-    background: #bbb;
-    color: #081C15;
+    background: #262223;
+    color: #f8f8f8;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
 }
 
 .btn-buy:hover {
-    background: #081C15;
-    color:#bbb;
+    font-weight: 550;
 }
 
 #cart-close{

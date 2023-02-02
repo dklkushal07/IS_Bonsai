@@ -4,17 +4,33 @@
     justify-content: space-evenly;
     transform: translateY(120px);
     }
+
+.heading h1{
+    text-align: left;
+    margin-top: 7rem;
+    font-size: 3rem;
+}
 #technology, #bonsai, #positive, #negative {
-    padding: 25% 25% 0 0;
+    padding: 15% 15% 0 0;
     font-size: 132%;
 }
 .flex-parent-element {
     display:flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     width: 100%;
 }
 .flex-child-element{
     flex: 1 3;
+    margin-top: 5rem;
+}
+.flex-child-element1:first-child{
+    padding-left: 15%;
+}
+
+.flex-child-element1{
+    padding-left: 30%;
+    flex: 7 3;
+    margin-top: 5rem;
 }
 .flex-child-element:first-child{
     padding-left: 15%;
@@ -24,12 +40,13 @@
     border-top: #000000; 
     position: fixed; 
 }
-a:link {
+#jump a:link {
     text-decoration: none;
     font-size: 130%;
+    transition: 0.3s ease;
 }
-a:hover {
+#jump a:hover {
     color:#444444;
-    text-decoration: underline;
     font-weight: bold;
+    padding-left: .1rem;
 }

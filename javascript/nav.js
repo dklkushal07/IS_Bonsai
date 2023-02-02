@@ -43,7 +43,7 @@ class NavBar extends HTMLElement {
                     <div class="total-price">$0</div>
                 </div>
                 <button type="button" class="btn-buy">Buy Now</button>
-                <button id="cart-close" aria-label="Close Alert" type="button">
+                <button id="cart-close" type="button" onclick="cartClose()">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -80,6 +80,7 @@ let logOut = () => {
     }
 }
 
+
 let reDirToLogin = () => {
     window.location.href="/IS_Bonsai/html/login.html";
 }
@@ -95,7 +96,7 @@ let cartActivation = () => {
 };
 
 // CloseCart
-closeCart.onclick = () => {
+cartClose = () => {
     cart.classList.remove('active');
 };
 
@@ -160,11 +161,12 @@ function quantityChanged(event) {
 function addCartClicked(event) {
     var button = event.target;
     var shopProducts = button.parentElement;
-    var title = shopProducts.getElementsByClassName('product-title')[0].innerText;
+    var title = shopProducts.getElementsByClassName("product-title")[0].innerText;
     var price = shopProducts.getElementsByClassName('price')[0].innerText;
     var productImg = shopProducts.getElementsByClassName('product-image')[0].innerText;
-    addProductToCart(title, price, productImg);
-    updateTotal();
+    console.log(title, price, productImg);
+    // addProductToCart(title, price, productImg);
+    // updateTotal();
 }
 
 function addProductToCart(title, price, productImg) {
