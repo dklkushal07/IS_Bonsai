@@ -21,8 +21,6 @@
 }
 
 .aboutus-block {
-  display: flex;
-  justify-content: space-between;
   margin-left: 100px;
   margin-right: 100px;
   align-items: left;
@@ -41,22 +39,52 @@
   left: 0;
 }
 
-.aboutus-header h1{
+.aboutus-header h1 {
   padding-bottom: 2rem;
 }
-.aboutus-header a p{
+
+.aboutus-header p {
   align-items: center;
-  margin-top: 100px;
+  margin-top: 40px;
   padding: 13px 20px;
   width: fit-content;
   text-decoration: none;
   background: #262223;
   font-size: larger;
 }
-
-.members {
-  flex-wrap: wrap;
+.our_value{
+  max-width: 87%;
+  margin: 0 auto;
+}
+.our_value, .team{
+  margin-top: 100px;
+}
+.our_value h1, .team h1, .feedback h1{
+  margin-bottom: 50px;
+}
+.values, .members{
   justify-content: space-evenly;
+}
+.each_value {
+  width: 30%;
+  margin: 0 2vw 2vw 2vw;
+  background-color: #cccccc;
+  border-radius: 30vw 25vw 30vw 12vw;
+  padding: 3vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.each_value h2 {
+  font-size: 2vw;
+}
+
+.each_value p {
+  font-size: 1.6vw;
+}
+
+.members{
+  flex-wrap: wrap;
 }
 
 .fa {
@@ -75,7 +103,6 @@ a {
 .team {
   position: relative;
   z-index: 1;
-  justify-content: space-evenly;
 
 }
 
@@ -117,7 +144,7 @@ a:hover {
 
 .member {
   position: relative;
-  margin: 5vw;
+  margin: 0 5vw 5vw 5vw;
   border-radius: 6px;
   background-color: var(--mycolor10);
 }
@@ -156,25 +183,9 @@ a:hover {
   opacity: 1;
 }
 
-.each_value {
-  width: 20%;
-  background-color: var(--my-color9);
-  border-radius: 30vw 25vw 30vw 12vw;
-  word-wrap: break-word;
-  padding: 4.5vw;
-}
-
-.each_value h2 {
-  font-size: 2vw;
-}
-
-.each_value p {
-  font-size: 1.6vw;
-}
 
 #about_us {
   position: relative;
-  pointer-events: all;
 }
 
 #about_us.active {
@@ -211,12 +222,10 @@ a:hover {
   line-height: 4vw;
   border: none;
   background: none;
-  /* text-decoration: none; */
 }
 
 .modal {
   position: absolute;
-  /* transform: translate(0%,0%) scale(0); */
   margin: 0 auto;
   opacity: 0;
   width: 80%;
@@ -230,18 +239,16 @@ a:hover {
 
 #modal1,
 #modal2,
-#modal3,
-#modal4 {
-  top: 128%;
+#modal3
+{
+top: 243%;
 }
 
+#modal4,
 #modal5 {
-  top: 210%;
+  top: 307%;
 }
 
-.modal.active{
-  /* transform: translate(0%,0%) scale(1); */
-  /* display: block; */
+.modal.active {
   opacity: 1;
-  /* pointer-events: auto; */
 }
