@@ -17,7 +17,7 @@ toggleList.forEach(toggleButton => {
     });
 });
 
-
+localStorage.setItem('login-status',"no");
 
 const signUp = e => {
     let usernameInput = document.getElementById('username-signup').value,
@@ -73,7 +73,7 @@ function signIn(e) {
         localStorage.setItem('login-status','yes');
         localStorage.setItem('local-username',JSON.stringify(username))
         alert("Logged in successfully!") ;
-        location.replace('/html/home.html');
+        location.replace('/IS_Bonsai/html/home.html');
     }
     e.preventDefault();
 }

@@ -51,6 +51,7 @@ class NavBar extends HTMLElement {
     }
 }
 
+
 window.customElements.define('navigation-bar', NavBar);
 
 
@@ -65,14 +66,13 @@ hamburger.addEventListener("click", () => {
 let userNav = document.querySelector(".nav-bar-right");
 let loginStatus = localStorage.getItem("login-status");
 let loginUserToggle = document.querySelector(".login-user");
-let localUsername = (localStorage.getItem("local-username")).substring(1, (localStorage.getItem("local-username")).length - 1);;
-console.log(localUsername)
 if (loginStatus == "yes") {
+    let localUsername = (localStorage.getItem("local-username")).substring(1, (localStorage.getItem("local-username")).length - 1);;
     userNav.classList.add('hasUser')
     loginUserToggle.innerHTML = localUsername;
 }
 
-logOut = () => {
+let logOut = () => {
     if (confirm("Do you really want to sign out?") == true) {
         localStorage.setItem("login-status", "no");
         userNav.classList.remove('hasUser')
@@ -80,16 +80,18 @@ logOut = () => {
     }
 }
 
-reDirToLogin = () => {
-    window.location.href = "login.html";
+
+let reDirToLogin = () => {
+    window.location.href="/IS_Bonsai/html/login.html";
 }
+
 
 // cart
 let cartIcon = document.querySelector("#cart");
 let cart = document.querySelector(".cart");
 let closeCart = document.querySelector("#cart-close");
 
-cartActivation = () => {
+let cartActivation = () => {
     cart.classList.add('active');
 };
 
@@ -213,7 +215,5 @@ function updateTotal() {
     }
 
     document.getElementsByClassName('total-price')[0].innerText = "$" + total;
-
-
 }
 

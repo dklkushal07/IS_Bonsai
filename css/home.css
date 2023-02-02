@@ -1,0 +1,155 @@
+body{
+    background-color: #faf9f8;
+}
+
+.parallax-section{
+    position: relative;
+    width: 100;
+    min-height: 120vh;
+    background: linear-gradient(to top,#094b65,transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parallax-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+
+.parallax-section::before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+.parallax-section #text{
+    position: absolute;
+    color: #094b65;
+    font-size: 10vw;
+    line-height: 0.55em;
+    top: 180px;
+    left: 25%;
+}
+
+.parallax-section #text span{
+    font-size: 0.2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.hidden{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height:60vh;
+}
+
+.sec{
+    min-height: 60vh;
+}
+
+#first-section{
+    background: linear-gradient(to bottom, #264a0c, #faf9f8);
+}
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    margin-bottom: 80px;
+
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#products-div img{
+    width: 175px;
+    object-fit: scale-down;
+    border-radius: 0.3rem;
+}
+
+#products-div img:hover{
+    width: 180px;
+    outline: .3rem solid#ccc;
+    outline-offset: 0;
+}
+
+
+
+#products-div{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+     margin-bottom: 00px; 
+}
+
+.hidden h1, .sec h1{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.hidden a{
+    border: none;
+    padding: 10px 20px;
+    background-color: #262223;
+    color: #ddc6b6;
+    font-size: var(--mid-text);
+}
+
+#tech-text{
+    position: relative;
+    text-align: center;
+}
+
+#tech-text img{
+    width:100%;
+    
+}
+
+#tech-text p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    line-height: 50px;
+}
+
+.people-list{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.person img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10rem;
+}
+
+.person{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#people-section{
+    justify-content: space-evenly;
+}
