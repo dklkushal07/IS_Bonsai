@@ -2,8 +2,12 @@
     display: flex;
 }
 
+.research{
+    padding-top: 7rem;
+}
+
 .research_head{
-    margin: 5rem;
+    margin-left: 90px;
     margin-bottom: 2rem;
 }
 .research_head p{
@@ -11,12 +15,12 @@
     font-size: 0.9rem;
 }
 
-a{
+.research_head a{
     text-decoration: none;
     color: var(--my-color2);
 }
 
-a:hover{
+.research_head a:hover{
     border-bottom: 0.1rem solid black;
 }
 
@@ -28,7 +32,7 @@ a:hover{
 }
 
 .research_content {
-    text-align: left;
+    /* text-align: left; */
     align-items: center;
     margin-top: 10%;
 }
@@ -57,10 +61,11 @@ ul{
     margin-top: 30px;
     list-style: none;
 }
-a{
+.lists ul a{
     text-decoration: none;
     /* padding: 5vh; */
     white-space: nowrap;
+    color: black;
     /* border-bottom: 1px solid transparent; */
 }
 /* a:active{
@@ -94,7 +99,6 @@ a{
 }
 .value li{
     list-style-type: disc;
-=======
     margin-right: 10vw;
 
 }
