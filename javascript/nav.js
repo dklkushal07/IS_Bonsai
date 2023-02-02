@@ -15,7 +15,7 @@ class NavBar extends HTMLElement {
                 <li><a href="research.html">Research</a></li>
             </ul>
             <div class="nav-bar-right">
-            <div id="cart"><button onclick="cartActivation()">CART</button></div>
+            <div id="cart"><button onclick="cartActivation(); cartCLose();">CART</button></div>
                 <div class="login-logout">
                     <div class="login-user"><button onclick="reDirToLogin()">LOGIN</button>
                     </div>
@@ -99,7 +99,7 @@ let cartActivation = () => {
 };
 
 // CloseCart
-cartClose = () => {
+let cartClose = () => {
     cart.classList.remove('active');
 };
 
