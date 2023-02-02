@@ -4,7 +4,7 @@ class NavBar extends HTMLElement {
         this.innerHTML =
             `
         <nav class="nav-bar">
-        <a href="home.html" height="60px"><img src="../images/logo with text off white.png" class="nav-bar-logo"></a>
+        <img src="../images/logo with text off white.png" onclick="sendToHome()"class="nav-bar-logo">
             <ul class="nav-bar-left">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="product.html">Products</a></li>
@@ -83,6 +83,10 @@ let logOut = () => {
 
 let reDirToLogin = () => {
     window.location.href="/IS_Bonsai/html/login.html";
+}
+
+let sendToHome = () => {
+    window.location.href="/IS_Bonsai/html/home.html";
 }
 
 
