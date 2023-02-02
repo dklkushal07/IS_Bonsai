@@ -233,14 +233,11 @@ a:hover {
 
 #modal1,
 #modal2,
-#modal3
-{
-top: 243%;
-}
-
+#modal3,
 #modal4,
-#modal5 {
-  top: 307%;
+#modal5
+{
+top: 260%;
 }
 
 .modal.active {
