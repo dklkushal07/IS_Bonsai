@@ -64,7 +64,6 @@ hamburger.addEventListener("click", () => {
 });
 
 let userNav = document.querySelector(".nav-bar-right");
-localStorage.setItem("login-status", "no");
 let loginStatus = localStorage.getItem("login-status");
 let loginUserToggle = document.querySelector(".login-user");
 if (loginStatus == "yes") {
