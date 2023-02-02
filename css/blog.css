@@ -10,9 +10,8 @@
     margin-top: 7rem;
     font-size: 3rem;
 }
-#technology, #bonsai, #positive, #negative {
-    padding: 15% 15% 0 0;
-    font-size: 132%;
+#technology, #bonsai, #positive, #negative , #conclusion{
+    padding: 10% 10% 0 0;
 }
 .flex-parent-element {
     display:flex;
@@ -39,6 +38,7 @@
 #jump{
     border-top: #000000; 
     position: fixed; 
+    z-index: -1;
 }
 #jump a:link {
     text-decoration: none;
