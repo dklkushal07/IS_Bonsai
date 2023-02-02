@@ -1,18 +1,4 @@
-:root {
-  --par-text: 14px;
-  --mid-text: 20px;
-  --my-color1: #081C15;
-  --my-color2: #1B4332;
-  --my-color3: #2D6A4F;
-  --my-color4: #40916C;
-  --my-color5: #52B788;
-  --my-color6: #74C69D;
-  --my-color7: #95D5B2;
-  --my-color8: #B7E4C7;
-  --my-color8: #D8F3DC;
-  --my-color9: #DDEAD1;
-  --mycolor10: #eef1e5;
-}
+
 h1 {
   text-align: center;
 }
@@ -47,7 +33,7 @@ h1 {
   padding-bottom: 2rem;
 }
 
-setting align-items to center, adding margin-top, padding, width, setting text-decoration to none
+/* setting align-items to center, adding margin-top, padding, width, setting text-decoration to none */
 .aboutus-header p {
   align-items: center;
   margin-top: 40px;
@@ -92,14 +78,14 @@ setting align-items to center, adding margin-top, padding, width, setting text-d
   flex-wrap: wrap;
 }
 
-/* .fa {
+.fa {
   padding: 0px;
   font-size: 30px;
   width: 30px;
   text-align: center;
   border-radius: 50%;
   padding-bottom: 2em;
-} */
+}
 
 a {
   text-decoration: none;
@@ -149,7 +135,7 @@ a:hover {
   position: relative;
   margin: 0 5vw 5vw 5vw;
   border-radius: 6px;
-  background-color: var(--mycolor10);
+  background-color: #e1e1e5;
 }
 
 .profile_img {
