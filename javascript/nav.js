@@ -1,6 +1,8 @@
+// Creating a class Navbar that inherits a plain HTML element
 class NavBar extends HTMLElement {
     constructor() {
-        super();
+        super(); // Calls the constructor of HTMLElement
+        // Initialises the innerHTML attribute of NavBar
         this.innerHTML =
             `
         <nav class="nav-bar">
@@ -24,11 +26,6 @@ class NavBar extends HTMLElement {
                         </button>
                     </div>
                 </div>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
             </div>
     </nav>
     <div class="cart">
@@ -51,40 +48,42 @@ class NavBar extends HTMLElement {
     }
 }
 
-
+// Defining the custom element navigation-bar as an object of NavBar
 window.customElements.define('navigation-bar', NavBar);
 
 
-let hamburger = document.querySelector(".hamburger");
-let leftMenu = document.querySelector(".nav-bar-left");
 
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    leftMenu.classList.toggle("active");
-});
 
 let userNav = document.querySelector(".nav-bar-right");
 let loginStatus = localStorage.getItem("login-status");
 let loginUserToggle = document.querySelector(".login-user");
+// If the user has been logged in, change the content of "Login button" to the localUsername
 if (loginStatus == "yes") {
-    let localUsername = (localStorage.getItem("local-username")).substring(1, (localStorage.getItem("local-username")).length - 1);;
+    // Removing the double quotations surrounding the string
+    let localUsername = (localStorage.getItem("local-username")).substring(1, (localStorage.getItem("local-username")).length - 1);; 
+    // Adds 'hasUser' to the classList of userNav
     userNav.classList.add('hasUser')
     loginUserToggle.innerHTML = localUsername;
 }
-
+// A funtion that logs the user out
 let logOut = () => {
+    // Confirm prompt that asks the user if they want to log out or not
     if (confirm("Do you really want to sign out?") == true) {
+        // Sets the value of 'login-status' in localStorage to 'no'
         localStorage.setItem("login-status", "no");
+        // Removes 'hasUser' from the classList of userNav
         userNav.classList.remove('hasUser')
+        //Changes the innerHTML of loginUserToggle to "Login button"
         loginUserToggle.innerHTML = `<button onclick="reDirToLogin()">LOGIN</button>`;
     }
 }
 
-
+//Function that redirects to login page
 let reDirToLogin = () => {
     window.location.href="../html/login.html";
 }
 
+// Fuction the redirects to home page when the logo in navbar is clicked
 let sendToHome = () => {
     window.location.href="../html/home.html";
 }
