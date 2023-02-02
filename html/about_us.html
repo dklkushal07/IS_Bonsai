@@ -743,7 +743,11 @@
         });
 
         // JavaScript for form validation of the feedback form
+
+        //adding click event listener to submit button
         document.getElementById("submitButton").addEventListener("click", function () {
+
+            //checking if the name and feedback fields are empty or not and getting
             if (document.getElementById("name").value !== "" && document.getElementById("feedback").value !== "") {
                 let email = document.getElementById("email").value;
                 let emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;

@@ -131,3 +131,10 @@ and (max-device-width: 1024px){
         display: flex;
     }
 }
+#value2 a{
+    color: black;
+}
+#value2 a:hover{
+   color: #9b9fa0;
+   border-bottom: 2px solid #9b9fa0;
+}
