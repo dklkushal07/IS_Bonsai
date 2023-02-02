@@ -1,0 +1,50 @@
+
+section{
+    position: relative;
+    width: 100;
+    min-height: 120vh;
+    background: linear-gradient(to top,#094b65,transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+
+section::before{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+section #text{
+    position: absolute;
+    color: #094b65;
+    font-size: 10vw;
+    line-height: 0.55em;
+    top: 180px;
+    left: 25%;
+}
+
+section #text span{
+    font-size: 0.2em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+#demo{
+    height:100vh;
+    background-color:#264a0c;
+}
