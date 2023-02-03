@@ -22,6 +22,7 @@
             margin: 20px auto;
             margin-bottom: 65px;
             box-shadow: 0 5px 30px rgb(0 0 0 / 30%);
+            /* setting horizontal offset of shadow to 0, vertical offset to 5px, blur radius to 30px and giving black color to shadow with 30% opacity  */
         }
 
         form {
@@ -30,6 +31,7 @@
 
         .feedback input {
             border: 1px solid black;
+            /*width style colour */
             height: 30px;
             padding: 2px;
             margin: 1vw;
@@ -62,10 +64,10 @@
 </head>
 
 <body>
-    <!-- adding navigation bar -->
+    <!-- using the custom element navigation-bar defined in nav.js -->
     <navigation-bar></navigation-bar>
 
-    <!-- the entire elements of page -->
+    <!-- div containing all the elements except popups -->
     <div id="about_us">
 
         <!-- introduction part of about us page -->
@@ -135,6 +137,7 @@
                 <!-- 1st team member -->
                 <div class="member">
                     <div class="profile_img" onclick="popup(); click1();">
+                        <!-- triggers two functions popup(), and click1() on click -->
                         <img src="../images/Samir.jpg" alt="">
                         <p class="overlay">View portfolio</p>
                     </div>
@@ -153,6 +156,7 @@
                 <!-- 2nd team member -->
                 <div class="member">
                     <div class="profile_img" onclick="popup(); click2();">
+                        <!-- triggers two functions popup(), and click2() on click -->
                         <img src="../images/Suvan_aboutUs.jpg" alt="">
                         <p class="overlay">View portfolio</p>
                     </div>
@@ -171,6 +175,7 @@
                 <!-- 3rd team member -->
                 <div class="member">
                     <div class="profile_img" onclick="popup(); click3();">
+                        <!-- triggers two functions popup(), and click3() on click -->
                         <img src="../images/kushal.jpg" alt="Kushal">
                         <p class="overlay">View portfolio</p>
                     </div>
@@ -189,6 +194,7 @@
                 <!-- 4th team member -->
                 <div class="member">
                     <div class="profile_img" onclick="popup(); click4();">
+                        <!-- triggers two functions popup(), and click4() on click -->
                         <img src="../images/pakiza.jpg" alt="">
                         <span class="overlay">View portfolio</span>
                     </div>
@@ -207,6 +213,7 @@
                 <!-- 5th team member -->
                 <div class="member">
                     <div class="profile_img" onclick="popup(); click5();">
+                        <!-- triggers two functions popup(), and click5() on click -->
                         <img src="../images/aayesha.jpg" alt="">
                         <p class="overlay">View portfolio</p>
                     </div>
@@ -582,15 +589,15 @@
                     <div class="education">
                         <h2>Educational Background</h2>
                         <div class="school flex">
-                            <p>date</p>
+                            <p>2020</p>
                             <p>SEE from Galaxy Public School</p>
                         </div>
                         <div class="highschool flex">
-                            <p>date</p>
+                            <p>2022</p>
                             <p>+2 Science from Prasadi College</p>
                         </div>
                         <div class="current flex">
-                            <p>date</p>
+                            <p>2023</p>
                             <p>Currently studying Computing with AI in Islington College</p>
                         </div>
                     </div>
@@ -710,10 +717,14 @@
     <script>
 
         // JavaScript for opening the popup on click
+
+        //toggles active class of element with id about_us
         function popup() {
             var about_us = document.getElementById('about_us');
             about_us.classList.toggle('active');
         }
+
+        //toggles active class of respective elements with respective IDs
         function click1() {
             document.getElementById('modal1').classList.toggle('active');
         }
@@ -731,8 +742,12 @@
         }
 
         // JavaScript for close button of the popup
+
+        //selects all the elements with class closeBtn and modal and assigns them to the constants closeButtons and modals respectively
         const closeButtons = document.querySelectorAll('.closeBtn');
         const modals = document.querySelectorAll('.modal');
+
+        //loops through the closeButtons and adds click event listener to each one of them and removes active class from the element with id about_us and loops through each modals and removes active class
         closeButtons.forEach(function (closeButton) {
             closeButton.addEventListener('click', function () {
                 document.getElementById('about_us').classList.remove('active');
@@ -742,30 +757,28 @@
             });
         });
 
+
         // JavaScript for form validation of the feedback form
 
         //adding click event listener to submit button
         document.getElementById("submitButton").addEventListener("click", function () {
 
-            //checking if the name and feedback fields are empty or not and getting
+            //checking if the name and feedback fields are empty or not 
             if (document.getElementById("name").value !== "" && document.getElementById("feedback").value !== "") {
-                let email = document.getElementById("email").value;
-                let emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                let email = document.getElementById("email").value;//getting the value of email field and storing it in variable email
+                let emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;//defining the regular pattern for valid email address and storing it in variable emailPattern
                 if (emailPattern.test(email)) {
-                    alert("Thank you for your feedback!");
+                    alert("Thank you for your feedback!");//display this if the entered email address follows the regular pattern
                 } else {
-                    alert("Please enter a valid email address.");
+                    alert("Please enter a valid email address.");//display this if the entered email address doesn't follow the regular pattern
                 }
             } else {
-                alert("Please fill out all the fields.");
+                alert("Please fill out all the fields.");//display this if any one of the three fields is empty
             }
         });
     </script>
 
-
-    </div>
-    </div>
-
+    <!-- custom element page-footer defined in footer.js -->
     <page-footer></page-footer>
 
     <script src="../javascript/footer.js"></script>

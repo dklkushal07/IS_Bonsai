@@ -1,4 +1,3 @@
-
 h1 {
   text-align: center;
 }
@@ -37,7 +36,7 @@ h1 {
 .aboutus-header p {
   align-items: center;
   margin-top: 40px;
-  padding: 13px 20px;
+  padding: 13px 20px; /*top-bottom left-right */
   width: fit-content;
   text-decoration: none;
   background: #262223;
@@ -55,22 +54,23 @@ h1 {
   margin-top: 100px;
 }
 
-
+/* setting margin-bottom of h1 tags of classes our_value, team and feedback to 50px */
 .our_value h1, .team h1, .feedback h1{
   margin-bottom: 50px;
 }
 
 
 .values, .members{
-  justify-content: space-evenly;
+  /* to evenly space out elements within the container */
+  justify-content: space-evenly; 
 }
 
-
+/* adding css to class each_value */
 .each_value {
   width: 30%;
   margin: 0 2vw 2vw 2vw;
   background-color: #cccccc;
-  border-radius: 30vw 25vw 30vw 12vw;
+  border-radius: 30vw 25vw 30vw 12vw;/* top right bottom left */
   padding: 3vw;
   text-align: center;
   display: flex;
@@ -89,10 +89,10 @@ h1 {
 
 
 .members{
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*wraps elements to a new line after */
 }
 
-
+/* adding css to the icons */
 .fa {
   padding: 0px;
   font-size: 30px;
@@ -103,39 +103,20 @@ h1 {
 }
 
 
-a {
-  text-decoration: none;
-}
-
 
 .team {
-  position: relative;
+  position: relative; 
   z-index: 1;
-
 }
 
 
 
 /* pseudo element */
 a:link {
-  color: var(--my-color1);
+  color:black;
 }
 
-a:hover {
-  color: var(--my-color1);
-}
-
-/* for mobile phones */
-@media only screen and (max-width: 600px) {
-  .flex {
-    flex-wrap: wrap;
-  }
-
-  .image1 {
-    margin: auto;
-  }
-}
-
+/* adding css to image of class member */
 .member img {
   height: 37vh;
   margin: auto;
@@ -143,24 +124,27 @@ a:hover {
   padding: 2em 2em;
 }
 
+/* adding css to element with class details of class members */
 .member .details {
   text-align: center;
   line-height: 2;
 }
 
+/* adding css to class member */
 .member {
-  position: relative;
-  margin: 0 5vw 5vw 5vw;
+  margin: 0 5vw 5vw 5vw;/* top right bottom left */
   border-radius: 6px;
   background-color: #e1e1e5;
 }
 
+/* adding css to profile image */
 .profile_img {
   position: relative;
   text-align: center;
 
 }
 
+/* adding css to overlay the text over the profile image*/
 .overlay {
   opacity: 0;
   position: absolute;
@@ -169,40 +153,43 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
+/* adding css to element with class overlay */
 .overlay {
-  color: var(--mycolor10);
+  color: black;
   font-weight: 400;
   font-size: 4vh;
 }
 
+/* adding blur effect to image on hover */
 .profile_img:hover img {
-  /* -webkit-filter: blur(4px); */
   filter: blur(4px);
-  /* opacity: 0.2; */
 }
 
+/* changing cursor to pointer while hovering over profile image */
 .profile_img:hover {
   cursor: pointer;
 }
 
+/* changing opacity of overlay to 1 while hovering over profile image */
 .profile_img:hover .overlay {
   opacity: 1;
 }
 
-
+/* the position of about_us id is set to relative */
 #about_us {
   position: relative;
 }
 
+/*to blur the element with id about us when it is active */
 #about_us.active {
   filter: blur(10px);
 }
-
 
 .social-media img{
   width: 2%;
   height: 2%;
 }
+
 .CV-container {
   z-index: 2;
 }
@@ -220,6 +207,7 @@ a:hover {
   padding-left: 6vw;
 }
 
+/* adding css to close button of CV-container */
 .CV-container .closeBtn {
   cursor: pointer;
   position: absolute;
@@ -235,8 +223,9 @@ a:hover {
   background: none;
 }
 
+/* adding css to modal class */
 .modal {
-  position: absolute;
+  position: absolute; /* used to position it to be absolute relative to its ancestor class CV-container */
   margin: 0 auto;
   opacity: 0;
   width: 80%;
@@ -244,10 +233,10 @@ a:hover {
   height: fit-content;
   background-color: rgb(230, 225, 225);
   padding: 3vw;
-  transition: 200ms ease-in-out;
-  /* opacity: 0; */
+  transition: 200ms ease-in-out; /* to set the transition effect with 200 millisecond with easing effect */
 }
 
+/* adding top to elements with id modal1 through modal5 */
 #modal1,
 #modal2,
 #modal3,
@@ -257,6 +246,7 @@ a:hover {
 top: 200vh;
 }
 
+/* to set the opacity of modal to 1 when it is active */
 .modal.active {
   opacity: 1;
 }
