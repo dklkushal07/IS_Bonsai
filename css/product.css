@@ -1,0 +1,734 @@
+:root{
+    --par-text: 14px;
+    --mid-text: 20px;
+    --my-color1:#081C15;
+    --my-color2:#1B4332;
+    --my-color3:#2D6A4F;
+    --my-color4:#40916C;
+    --my-color5:#52B788;
+    --my-color6:#74C69D;
+    --my-color7:#95D5B2;
+    --my-color8:#B7E4C7;
+    --my-color8:#D8F3DC;
+    --my-color9:#DDEAD1;
+    --mycolor10:#eef1e5;
+}
+
+body{
+    background-color: #faf9f8;;
+   
+}
+
+/*product header*/
+.pro_head_content{
+    margin-top: 75px;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+.product_head{
+    align-items: center;
+    padding: 5px;
+}
+
+.product_image{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 50px;
+    display: block;
+}
+
+.product_content{
+    margin: 50px;
+}
+
+.product_content h1{
+    margin-bottom: 10px;
+}
+
+.product_content p{
+    margin-bottom: 30px;
+}
+
+/*product header anchor tag*/
+.product_content a{
+    align-items: center;
+    padding: 13px 30px;
+    text-decoration: none;
+    color: white;
+    background: #262223;
+    font-size: larger;
+}
+
+/*Product card*/
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px 20px 20px 20px;
+}
+
+.product .product_column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.product .product_column .box{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.product .product_column .box .images img{
+    width: 90%;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 0.5px;
+}
+
+/*single product card*/
+.grid h2{
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(39, 38, 38);
+    transition: .5s ease;
+}
+
+.grid:hover h2{
+    color: #302121;
+}
+.grid h4{
+    text-transform: uppercase;
+    font-weight: 15;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: #6c6c6c;
+    margin-bottom: 25px;
+}
+
+.grid{
+    position: relative;     /*helps to position the element how it would have been positioned had it been static*/
+    padding: 10px;
+    margin-top: 20px;
+    background: #fff;
+    outline: .1rem solid #ccc;
+    outline-offset: -1rem ;    /* to add space between the outline and the edge of the border of the element*/
+    transition: .5s ease;
+}
+
+.grid:hover {
+    outline: .3rem solid#ccc;
+    outline-offset: 0;
+}
+.grid.images{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+}
+
+/*product card more button*/
+.grid a{
+    position: relative;
+    padding: 10px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background: #262223;
+    font-size: larger;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;     /*to place a dive element on top of the other div element. In this case the more button*/
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);       /*places the more button -50% along x and -50% along y axis*/
+    -ms-transform: translate(-50%, -50%);        /* places the popup component -50% along x and -50% along y axis*/
+    text-align: center;
+}
+
+.grid:hover .images{
+    opacity: 0.3;
+    transform: scale(1.04);
+}
+
+.grid:hover a{
+    opacity: 1;
+}
+
+/*background blur*/
+#blur.active{
+    filter: blur(20px);
+    pointer-events: none;       /*the element doesn't react to pointer events*/
+    user-select:none;
+}
+
+/*popup*/
+.product_container{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.product_detail{
+    display: flex;      /*to arrange two or more div elements along side each other*/
+}
+
+.product_detail .detail-content{
+    display: grid;      /*divides the page by defining the relationship in terms of size, height ,etc*/
+    align-items: center;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.product_detail img{
+    height: 300px;
+    width: 425px;
+}
+
+/*cart button*/
+.detail-buttons a{
+    position: relative;         /*position element relative to how it would have been placed had it been static*/
+    padding: 10px 55px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background: #262223;
+}
+.rating img{
+    height: 5%;
+    width: 5%;
+}
+
+/*popup 1*/
+#popup1 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;     /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;        /*mouse cursor to be displayed while pointing over an element*/
+}
+
+#popup1{
+    position: fixed;        /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%); 
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);     /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup1.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 2*/
+#popup2 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup2{
+    position: fixed;        /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup2.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 3*/
+#popup3 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup3{
+    position: fixed;         /*Place the second div element over the first div element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup3.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 4*/
+#popup4 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup4{
+    position: fixed;         /*Place the second div element over the first div element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0; 
+    transition: 0.5s;
+}
+
+#popup4.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 5*/
+#popup5 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup5{
+    position: fixed;         /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0; 
+    transition: 0.5s;
+}
+
+#popup5.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 6*/
+#popup6 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup6{
+    position: fixed;         /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup6.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 7*/
+#popup7 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;  
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup7{
+    position: fixed;         /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup7.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 8*/
+#popup8 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup8{
+    position: fixed;            /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup8.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 9*/
+#popup9 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;          /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup9{
+    position: fixed;         /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0; 
+    transition: 0.5s;
+}
+
+#popup9.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 10*/
+#popup10 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup10{
+    position: fixed;        /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup10.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 11*/
+#popup11 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup11{
+    position: fixed;         /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);             /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup11.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 12*/
+#popup12 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup12{
+    position: fixed;        /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup12.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 13*/
+#popup13 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup13{
+    position: fixed;         /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup13.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 14*/
+#popup14 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;          
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup14{
+    position: fixed;         /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup14.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 15*/
+#popup15 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;            /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup15{
+    position: fixed;         /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup15.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/*popup 16*/
+#popup16 button{
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    position: absolute;         /*Place a second div element over the first div element*/
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#popup16{
+    position: fixed;         /*Place the element over the other other element*/
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);          /* syntax: (box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;)*/
+    background: whitesmoke;
+    visibility: hidden;         /*Hide the visibility of the popup until the active class is called*/
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#popup16.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+/* product footer table*/
+.product-footer table{
+    margin-left:auto;
+    margin-right:auto;
+    align-items:center;
+    margin-bottom: 50px;
+}
+
+.product-footer h2{
+    margin: 40px;
+    text-align: center;
+}
+
+.product-footer table td img{
+    align-items: center;
+    margin: 40px;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    
+}
+
+.product-footer table td p{
+    margin-top: 10px;
+    text-align: center;
+}

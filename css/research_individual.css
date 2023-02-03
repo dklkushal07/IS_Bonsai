@@ -1,0 +1,125 @@
+/* setting the display property of class flex to flex */
+.flex{
+    display: flex;
+}
+
+/* adding padding top to the research class */
+.research{
+    padding-top: 7rem;
+}
+
+/* adding margin-left and margin-bottom to the class research_head */
+.research_head{
+    margin-left: 90px;
+    margin-bottom: 2rem;
+}
+
+/* changing font-size of p tag of research_head class to 0.9rem */
+.research_head p{
+    font-size: 0.9rem;
+}
+
+/* setting text-decoration to none and changing the colour of the anchor tag of class research_head to black */
+.research_head a{
+    text-decoration: none;
+    color: black;
+}
+
+/* adding a solid black border bottom when the anchor tag of research_head is hovered */
+.research_head a:hover{
+    border-bottom: 0.1rem solid black;
+}
+
+/* setting margin-top and padding-top to 0, width to 98% and display property to flex of class research_head_content */
+.research_head_content{
+    margin-top: 0;
+    padding-top: 0;
+    width: 98%;
+    display: flex;   
+}
+
+/* adding css to class research_content */
+.research_content {
+    text-align: left;
+    margin-top: 10%;
+}
+
+/* adding css to h1 tag of class research_content */
+.research_content h1{
+    margin-left: -20rem;
+    font-size: 3rem;
+}
+
+/* adding css to image of class research_image */
+.research_image img{
+    margin-right: -40px;
+    width: 70%;
+    height: auto;
+    display: block;
+}
+
+/* adding padding to the class value */
+.value {
+    padding: 10% 10% 0 0; /* padding top right bottom left */
+}
+
+/* adding css to ul tags */
+ul{
+    margin-top: 30px;
+    list-style: none;
+}
+
+/* adding css to anchor tag of class lists */
+.lists ul a{
+    text-decoration: none;
+    white-space: nowrap; /* the texts will not wrap and stay in a single line */
+    color: black;
+}
+
+/* adding css to class lists */
+.lists{
+    position: sticky; /* sticks the class lists to top left after scrolling*/
+    top: 10%;
+    max-width: 30%;
+    border-top: 2px rgb(214, 213, 213) solid; /* width color style */
+    max-width: 350px;
+    border-bottom: 2px black solid; /* width color style */
+    max-width: 350px;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+    padding-right: 0;
+}
+
+/* adding css to tag li of class lists */
+.lists li{
+    margin-bottom: 2vh;
+    transition: 0.07s ease;
+    padding-bottom: 20px;
+}
+
+/* anchor pseudo class for hover over li element*/
+.lists li:hover{
+    font-weight: 600; 
+    padding-left: 6px;
+}
+
+
+.list-desc{
+    margin-left: 35vw;
+
+}
+.value li{
+    list-style-type: disc; /* filled circle */
+    margin-right: 10vw;
+
+}
+
+#value2 a{
+    color: black;
+}
+
+/* anchor pseudo class for hover over anchor tag of ID value2*/
+#value2 a:hover{
+   color: #9b9fa0;
+   border-bottom: 2px solid #9b9fa0;
+}

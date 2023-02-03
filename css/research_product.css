@@ -1,0 +1,22 @@
+/* css of images in the content */
+.value img{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* css of the content section */
+.value-content {
+    display: flex;          /*to arrange two or more div elements along side each other*/
+    margin-bottom: 25px;
+}
+
+/* css of images inside the value-content class */
+.value-content img{
+    width: 50%;
+    height: 50%;
+}
+
+.value h1{
+    margin-bottom: 25px;
+}

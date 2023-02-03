@@ -1,0 +1,429 @@
+
+/*  Root variables declaration  */
+:root{
+    --par-text: 14px;
+    --mid-text: 20px;
+}
+
+/* Importing the Montserrat font-family */
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+}
+
+/* Universal selector: The effects are applied to all components */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+/* Webkit-based browsers */
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    background-color: #262223;
+    font-size: var(--mid-text);
+    font-weight: 600;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.8);
+}
+
+
+.nav-bar-logo{
+    height: 50px;
+    position: relative;
+}
+
+.nav-bar-left{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    gap: 60px;
+}
+
+.nav-bar-right{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between
+}
+
+.login-logout{
+    background-color: #05472a;
+    padding: 5px;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+#cart button{
+    width: 100%;
+    height: 100%;
+    background-color: #262223;
+    border-style: none;
+    color: #fff;
+    font-size: var(--mid-text);
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+#cart button:hover{
+    background-color: #fff;
+    color: #262223;
+}
+
+#cart{
+    border: #cccccc solid 2px;
+    width: 170px;
+    border-radius: 0.2rem;
+}
+
+#logout{
+    display: none;
+    pointer-events: none;
+}
+
+.login-logout .login-user{
+    min-width: 170px;
+    text-align: center;
+    font-size: var(--mid-text);
+    color: #fff;
+}
+
+.login-logout .login-user button{
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    background-color: #05472a;
+    color: #ffffff;
+    font-size: var(--mid-text);
+    font-weight: 600;
+}
+
+.login-logout .login-user button:hover{
+    background-color: #fff;
+    color: #05472a;
+}
+
+.login-logout:hover .login-user button{
+    background-color: #fff;
+    color: #05472a;
+}
+
+.login-logout:hover .login-user{
+    color: #05472a;
+}
+
+.login-logout:hover{
+    background-color: #fff;
+}
+
+
+.login-logout #logout{
+    height: 100%;
+}
+
+.login-logout #logout button{
+    background-color:#ddc6b6 ;
+    border-style: none;
+    border-radius: 0.2rem;
+    height: 100%;
+    margin: 0 2px;
+}
+
+.login-logout #logout button img{
+    height:30px;
+    margin: 0 2px;
+}
+
+
+.nav-bar-right.hasUser #logout{
+    display: inline;
+    pointer-events: all;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-bar a{
+    transition: 0.1s ease;
+}
+.nav-bar a:hover{
+    color: #ddc6b6;
+    border-bottom: 0.1rem solid #ddc6b6;
+}
+
+
+
+li{
+    list-style: none;
+}
+
+
+.footer{
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right,#181717, #262223 );
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative ;
+    border-bottom: 3px solid #ccc;
+}
+
+.email{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.col ul li a:hover{
+    color: #bbb;
+    padding-left: 10px;
+}
+
+.footer-form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.footer-form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+.footer-form button{
+    background: transparent;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.footer-form button:hover{
+    color: #bbb;
+    padding-right: 10px;
+}
+
+.col .socials a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.col .socials a:hover{
+    color: #bbb;
+    padding-left: 10px;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.footer p, .footer a{
+    text-align: left;
+}
+
+/*cart*/
+.cart{
+    position: fixed;
+    align-items: top;
+    margin-top: 70px;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: #faf9f8;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+    z-index: 100;
+}
+
+.cart.active{
+    right: 0;
+}
+
+.cart-content{
+    top:0;
+}
+
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+#cart-close{
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap:.5rem;
+    margin-top: 1rem;
+}
+
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    left: 0;
+    align-self: flex-start;
+}
+
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cart-price{
+    font-weight: 500;
+}
+
+.cart-quantity{
+    border: 1px solid rgb(78, 75, 75);
+    outline-color: #081C15;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-delete{
+    font-size: 14px;
+    color: #081C15;
+    cursor: pointer;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid  rgb(78, 75, 75);
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price{
+    margin-left: 0.5rem;
+}
+
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: #262223;
+    color: #f8f8f8;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    font-weight: 550;
+}
+
+#cart-close{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 1rem;
+    color:#081C15;
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- For the responsiveness of the webpage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Aayesha,Kushal,Pakiza,Samir,Suvan" content="Islington">
+    <meta name="About us" content="HTML,CSS,Javascript">
+    <!-- title of webpage -->
+    <title>About Us</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <!-- links for CSS -->
+    <link rel="stylesheet" href="../css/about_us.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- internal css -->
+    <style>
+        .feedback {
+            background-color: white;
+            border-bottom: none;
+            width: 60%;
+            margin: 20px auto;
+            margin-bottom: 65px;
+            box-shadow: 0 5px 30px rgb(0 0 0 / 30%);
+            /* setting horizontal offset of shadow to 0, vertical offset to 5px, blur radius to 30px and giving black color to shadow with 30% opacity  */
+        }
+
+        form {
+            text-align: center;
+        }
+
+        .feedback input {
+            border: 1px solid black;
+            /*width style colour */
+            height: 30px;
+            padding: 2px;
+            margin: 1vw;
+            width: 55vh;
+            color: #081C15;
+        }
+
+        .feedback form {
+            padding: 2vw;
+        }
+
+        /* adding css to the submit button of feedback form */
+        input[type="submit"] {
+            background-color: #262223;
+            color: white;
+            padding: 10px 20px 25px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            /*changing arrow cursor to pointer indicating the clickability of item */
+            width: fit-content;
+        }
+
+        /* changing the effect of submit button while hovering */
+        input[type="submit"]:hover {
+            background-color: #cccccc;
+            color: #262223;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- using the custom element navigation-bar defined in nav.js -->
+    <navigation-bar></navigation-bar>
+
+    <!-- div containing all the elements except popups -->
+    <div id="about_us">
+
+        <!-- introduction part of about us page -->
+        <div class="aboutus-block flex">
+            <div class="aboutus-content">
+                <div class="aboutus-header">
+                    <h1 style="text-align: left;">Nice to meet you!</h1>
+                    <h2 style="margin-bottom: 1.7vw;">We are Shrubs.</h2>
+                    <h3>We believe in the beauty and connection with nature that bonsai provides.</h3>
+                    <a href="#team">
+                        <p style="color: aliceblue;">MEET OUR TEAM</p>
+                    </a>
+                </div>
+            </div>
+            <div class="aboutus-image">
+                <img src="../images/team.png">
+            </div>
+        </div>
+
+        <!-- founding story -->
+        <div class="founding flex" style="margin: 0 auto;">
+            <div class="left" style="width: 30%; margin-left: 25vw;">
+                <h1>Founding Story</h1>
+            </div>
+            <div class="right">
+                <p style="width: 60%; margin-left: 2vw; line-height: 2vw; text-align: justify;">Shrubs was founded in
+                    2023 by a group of bonsai enthusiasts who were passionate about sharing their love of bonsai with
+                    others. They saw a need for a platform that would make it easy for people to learn about bonsai and
+                    buy high-quality bonsai trees. At Shrubs, we are committed to promoting the bonsai culture and
+                    making it accessible to everyone. We offer a wide range of bonsai trees, all carefully selected for
+                    their quality and value. So if you're looking to buy a bonsai tree, connect with other bonsai
+                    enthusiasts, Shrubs is the place to be. Join us today and be part of a growing community of bonsai
+                    lovers from around the world!</p>
+            </div>
+        </div>
+
+        <!-- our values -->
+        <div class="our_value">
+            <h1>Our Values</h1>
+            <div class="values flex">
+                <div class="each_value">
+                    <h3>Creating a community of bonsai enthusiasts</h3>
+                </div>
+
+                <div class="each_value">
+                    <h3>Helping customers find the right bonsai tree to fit their needs</h3>
+                </div>
+
+                <div class="each_value">
+                    <h3>Providing information about the impact of technology in bonsai culture.</h3>
+                </div>
+
+                <div class="each_value">
+                    <h3>Inspiring people to create their own bonsai by showcasing our beautiful bonsai collection</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- team section  -->
+        <div class="team" id="team">
+            <div class="title">
+                <h1>Our Team</h1>
+            </div>
+
+            <div class="members flex">
+
+                <!-- 1st team member -->
+                <div class="member">
+                    <div class="profile_img" onclick="popup(); click1();">
+                        <!-- triggers two functions popup(), and click1() on click -->
+                        <img src="../images/Samir.jpg" alt="">
+                        <p class="overlay">View portfolio</p>
+                    </div>
+                    <div class="details">
+                        <div class="name">Samir Sen</div>
+                        <div class="position">Co-founder</div>
+                        <div class="social-media">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-github"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd team member -->
+                <div class="member">
+                    <div class="profile_img" onclick="popup(); click2();">
+                        <!-- triggers two functions popup(), and click2() on click -->
+                        <img src="../images/Suvan_aboutUs.jpg" alt="">
+                        <p class="overlay">View portfolio</p>
+                    </div>
+                    <div class="details">
+                        <div class="name">Suvan Thapa Magar</div>
+                        <div class="position">Co-founder</div>
+                        <div class="social-media">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-github"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3rd team member -->
+                <div class="member">
+                    <div class="profile_img" onclick="popup(); click3();">
+                        <!-- triggers two functions popup(), and click3() on click -->
+                        <img src="../images/kushal.jpg" alt="Kushal">
+                        <p class="overlay">View portfolio</p>
+                    </div>
+                    <div class="details">
+                        <div class="name">Kushal Dhakal</div>
+                        <div class="position">Co-founder</div>
+                        <div class="social-media">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-github"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4th team member -->
+                <div class="member">
+                    <div class="profile_img" onclick="popup(); click4();">
+                        <!-- triggers two functions popup(), and click4() on click -->
+                        <img src="../images/pakiza.jpg" alt="">
+                        <span class="overlay">View portfolio</span>
+                    </div>
+                    <div class="details">
+                        <div class="name">Pakiza Acharya</div>
+                        <div class="position">Co-founder</div>
+                        <div class="social-media">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-github"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5th team member -->
+                <div class="member">
+                    <div class="profile_img" onclick="popup(); click5();">
+                        <!-- triggers two functions popup(), and click5() on click -->
+                        <img src="../images/aayesha.jpg" alt="">
+                        <p class="overlay">View portfolio</p>
+                    </div>
+                    <div class="details">
+                        <div class="name">Aayesha Nakarmi</div>
+                        <div class="position">Co-founder</div>
+                        <div class="social-media">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-github"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- feedback form -->
+        <div class="feedback">
+            <form>
+                <h1>Feedback</h1>
+                <label for="name">
+                    <p>Your name</p>
+                </label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+
+                <label for="email">
+                    <p>Your email</p>
+                </label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="feedback">
+                    <p>Give us your feedback</p>
+                </label>
+                <textarea name="" id="feedback" cols="44" rows="10" placeholder="Your feedback" required></textarea>
+                <p><input type="submit" value="Submit" id="submitButton"></p>
+
+        </div>
+        </form>
+    </div>
+
+    </div>
+
+    <!-- Portfolio popups for team members -->
+    <div class="CV-container">
+
+        <!-- Portfolio popup for 1st member -->
+        <div id="modal1" class="modal">
+            <div class="head">
+                <button class="closeBtn">&times;</button>
+                <h1>Samir Sen</h1>
+                <h3>Co-founder of Shrubs</h3>
+            </div>
+            <hr>
+            <div class="flex">
+                <div class="left-side">
+                    <div class="contact-details" style="background-color: lightgrey; padding: 0 3vw; margin: 2vw;">
+                        <h2>Contact</h2>
+                        <div class="contact flex">
+                            <p>Instagram</p>
+                        </div>
+                        <div class="facebook flex">
+                            <p>Twitter</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>LinkedIn</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li><b>Soft Skills</b>
+                                <ul>
+                                    <li>Leadership</li>
+                                    <li>Team work</li>
+                                    <li>Problem solving</li>
+                                </ul>
+                            </li>
+                            <li><b>Technical Skills</b>
+                                <ul>
+                                    <li>Programming Languages(Java, Python, C)</li>
+                                    <li>Web Development(CSS, HTML, JavaScript)</li>
+                                    <li>Database Management(MySQL)</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-side" style="margin-left: 4vw;">
+                    <div class="education">
+                        <h2>Educational Background</h2>
+                        <div class="school flex">
+                            <p>2020</p>
+                            <p>SEE from Pinnacle Academy</p>
+                        </div>
+                        <div class="highschool flex">
+                            <p>2022</p>
+                            <p>+2 Science from Pinnacle Academy</p>
+                        </div>
+                        <div class="current flex">
+                            <p>2023</p>
+                            <p>Currently studying Computing with AI in Islington college</p>
+                        </div>
+                    </div>
+
+                    <div class="volunteer">
+                        <h2>Volunteering</h2>
+                        <ul>
+                            <li>Red Cross</li>
+                            <li>Lions Club</li>
+                            <li>Scouts</li>
+                            <li>Talchikhhel Youthclub</li>
+                        </ul>
+                    </div>
+
+                    <div class="certifications">
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>Nakhipot Under 19 Basketball team</li>
+                            <li>3km Marathon</li>
+                            <li>Mr.Olympia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio popup for 2nd team member -->
+        <div id="modal2" class="modal">
+            <div class="head">
+                <button class="closeBtn">&times;</button>
+                <h1>Suvan Thapa Magar</h1>
+                <h3>Founder of Shrubs</h3>
+            </div>
+            <hr>
+            <div class="flex">
+                <div class="left-side">
+                    <div class="contact-details" style="background-color: lightgrey; padding: 0 3vw; margin: 2vw;">
+                        <h2>Contact</h2>
+                        <div class="contact flex">
+                            <p>Instagram</p>
+                        </div>
+                        <div class="facebook flex">
+                            <p>Twitter</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>LinkedIn</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li><b>Soft Skills</b>
+                                <ul>
+                                    <li>Leadership</li>
+                                    <li>Team work</li>
+                                    <li>Problem solving</li>
+                                </ul>
+                            </li>
+                            <li><b>Technical Skills</b>
+                                <ul>
+                                    <li>Programming Languages(Java, Python, C)</li>
+                                    <li>Web Development(CSS, HTML, JavaScript)</li>
+                                    <li>Database Management(MySQL)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-side" style="margin-left: 4vw;">
+
+                    <div class="education">
+                        <h2>Educational Background</h2>
+                        <div class="school flex">
+                            <p>2020</p>
+                            <p>SEE from Paragon Public School</p>
+                        </div>
+                        <div class="highschool flex">
+                            <p>2022</p>
+                            <p>+2 Science from Ullens School</p>
+                        </div>
+                        <div class="current flex">
+                            <p>2023</p>
+                            <p>Currently studying Computing with AI in Islington college</p>
+                        </div>
+                    </div>
+
+                    <div class="volunteer">
+                        <h2>Volunteering</h2>
+                        <ul>
+                            <li>KAT center</li>
+                            <li>Aanta Sewa Orphanage</li>
+                        </ul>
+                    </div>
+
+                    <div class="certifications">
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>KIST First Aid Programme</li>
+                            <li>Nritya agan Kathak Class </li>
+                            <li>Model United Nation by Paragon Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio popup for 3rd team member -->
+        <div id="modal3" class="modal">
+            <div class="head">
+                <button class="closeBtn" onclick="close()">&times;</button>
+                <h1>Kushal Dhakal</h1>
+                <h3>Co-founder of Shrubs</h3>
+            </div>
+            <hr>
+            <div class="flex">
+                <div class="left-side">
+                    <div class="contact-details" style="background-color: lightgrey; padding: 0 3vw; margin: 2vw;">
+                        <h2>Contact</h2>
+                        <div class="contact flex">
+                            <p>Instagram</p>
+                        </div>
+                        <div class="facebook flex">
+                            <p>Twitter</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>LinkedIn</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li><b>Soft Skills</b>
+                                <ul>
+                                    <li>Leadership</li>
+                                    <li>Team work</li>
+                                    <li>Problem solving</li>
+                                </ul>
+                            </li>
+                            <li><b>Technical Skills</b>
+                                <ul>
+                                    <li>Programming Languages(Java, Python, C)</li>
+                                    <li>Web Development(CSS, HTML, JavaScript)</li>
+                                    <li>Database Management(MySQL)</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-side" style="margin-left: 4vw;">
+
+                    <div class="education">
+                        <h2>Educational Background</h2>
+                        <div class="school flex">
+                            <p>2020</p>
+                            <p>SEE from Meda Secondary School</p>
+                        </div>
+                        <div class="highschool flex">
+                            <p>2022</p>
+                            <p>A levels from St.Xavier College</p>
+                        </div>
+                        <div class="current flex">
+                            <p>2023</p>
+                            <p>Currently studying Computing with AI in Islington college</p>
+                        </div>
+                    </div>
+
+                    <div class="volunteer">
+                        <h2>Volunteering</h2>
+                        <ul>
+                            <li>The Hope Hermitage</li>
+                            <li>Kapan Community Dog Welfare Center</li>
+                            <li>Sneha's Care</li>
+                        </ul>
+                    </div>
+
+                    <div class="certifications">
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>Vertex Hackathon</li>
+                            <li>400m Running race</li>
+                            <li>MUN by St.Xavier College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio popup for 4th team member -->
+        <div id="modal4" class="modal">
+            <div class="head">
+                <button class="closeBtn" onclick="close()">&times;</button>
+                <h1>Pakiza Acharya</h1>
+                <h3>Co-founder of Shrubs</h3>
+            </div>
+            <hr>
+            <div class="flex">
+                <div class="left-side">
+                    <div class="contact-details" style="background-color: lightgrey; padding: 0 3vw; margin: 2vw;">
+                        <h2>Contact</h2>
+                        <div class="contact flex">
+                            <p>Instagram</p>
+                        </div>
+                        <div class="facebook flex">
+                            <p>Twitter</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>LinkedIn</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li><b>Soft Skills</b>
+                                <ul>
+                                    <li>Leadership</li>
+                                    <li>Team work</li>
+                                    <li>Problem solving</li>
+                                </ul>
+                            </li>
+                            <li><b>Technical Skills</b>
+                                <ul>
+                                    <li>Programming Languages(Java, Python, C)</li>
+                                    <li>Web Development(CSS, HTML, JavaScript)</li>
+                                    <li>Database Management(MySQL)</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-side" style="margin-left: 4vw;">
+
+                    <div class="education">
+                        <h2>Educational Background</h2>
+                        <div class="school flex">
+                            <p>2020</p>
+                            <p>SEE from Galaxy Public School</p>
+                        </div>
+                        <div class="highschool flex">
+                            <p>2022</p>
+                            <p>+2 Science from Prasadi College</p>
+                        </div>
+                        <div class="current flex">
+                            <p>2023</p>
+                            <p>Currently studying Computing with AI in Islington College</p>
+                        </div>
+                    </div>
+
+                    <div class="volunteer">
+                        <h2>Volunteering</h2>
+                        <ul>
+                            <li>Helping Hands Foundation Nepal</li>
+                            <li>Shree's Animal Rescue</li>
+                            <li>Divine Service Home</li>
+                        </ul>
+                    </div>
+
+                    <div class="certifications">
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>Interhouse table tennis competition winner</li>
+                            <li>Drawing contest</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio popup for 5th team member -->
+        <div id="modal5" class="modal">
+            <div class="head">
+                <button class="closeBtn" onclick="close()">&times;</button>
+                <h1>Aayesha Nakarmi</h1>
+                <h3>Co-founder of Shrubs</h3>
+            </div>
+            <hr>
+            <div class="flex">
+                <div class="left-side">
+                    <div class="contact-details" style="background-color: lightgrey; padding: 0 3vw; margin: 2vw;">
+                        <h2>Contact</h2>
+                        <div class="contact flex">
+                            <p>Instagram</p>
+                        </div>
+                        <div class="facebook flex">
+                            <p>Twitter</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>LinkedIn</p>
+                        </div>
+                        <div class="contact flex">
+                            <p>GitHub</p>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li><b>Soft Skills</b>
+                                <ul>
+                                    <li>Leadership</li>
+                                    <li>Team work</li>
+                                    <li>Problem solving</li>
+                                </ul>
+                            </li>
+                            <li><b>Technical Skills</b>
+                                <ul>
+                                    <li>Programming Languages(Java, Python, C)</li>
+                                    <li>Web Development(CSS, HTML, JavaScript)</li>
+                                    <li>Database Management(MySQL)</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-side" style="margin-left: 4vw;">
+
+                    <div class="education">
+                        <h2>Educational Background</h2>
+                        <div class="school flex">
+                            <p>2020</p>
+                            <p>SEE from Swarnim School</p>
+                        </div>
+                        <div class="highschool flex">
+                            <p>2022</p>
+                            <p>+2 Science from KMC</p>
+                        </div>
+                        <div class="current flex">
+                            <p>2023</p>
+                            <p>Currently studying Computing with AI in Islington college</p>
+                        </div>
+                    </div>
+
+                    <div class="volunteer">
+                        <h2>Volunteering</h2>
+                        <ul>
+                            <li>Project Humane Nepal</li>
+                            <li>Dyomaa Old Age Home</li>
+                        </ul>
+                    </div>
+
+                    <div class="certifications">
+                        <h2>Certifications</h2>
+                        <ul>
+                            <li>Painting Competition</li>
+                            <li>JISP First Aid Programme</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- internal javascript -->
+    <script>
+
+        // JavaScript for opening the popup on click
+
+        //toggles active class of element with id about_us
+        function popup() {
+            var about_us = document.getElementById('about_us');
+            about_us.classList.toggle('active');
+        }
+
+        //toggles active class of respective elements with respective IDs
+        function click1() {
+            document.getElementById('modal1').classList.toggle('active');
+        }
+        function click2() {
+            document.getElementById('modal2').classList.toggle('active');
+        }
+        function click3() {
+            document.getElementById('modal3').classList.toggle('active');
+        }
+        function click4() {
+            document.getElementById('modal4').classList.toggle('active');
+        }
+        function click5() {
+            document.getElementById('modal5').classList.toggle('active');
+        }
+
+        // JavaScript for close button of the popup
+
+        //selects all the elements with class closeBtn and modal and assigns them to the constants closeButtons and modals respectively
+        const closeButtons = document.querySelectorAll('.closeBtn');
+        const modals = document.querySelectorAll('.modal');
+
+        //loops through the closeButtons and adds click event listener to each one of them and removes active class from the element with id about_us and loops through each modals and removes active class
+        closeButtons.forEach(function (closeButton) {
+            closeButton.addEventListener('click', function () {
+                document.getElementById('about_us').classList.remove('active');
+                modals.forEach(function (modal) {
+                    modal.classList.remove('active');
+                });
+            });
+        });
+
+
+        // JavaScript for form validation of the feedback form
+
+        //adding click event listener to submit button
+        document.getElementById("submitButton").addEventListener("click", function () {
+
+            //checking if the name and feedback fields are empty or not 
+            if (document.getElementById("name").value !== "" && document.getElementById("feedback").value !== "") {
+                let email = document.getElementById("email").value;//getting the value of email field and storing it in variable email
+                let emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;//defining the regular pattern for valid email address and storing it in variable emailPattern
+                if (emailPattern.test(email)) {
+                    alert("Thank you for your feedback!");//display this if the entered email address follows the regular pattern
+                } else {
+                    alert("Please enter a valid email address.");//display this if the entered email address doesn't follow the regular pattern
+                }
+            } else {
+                alert("Please fill out all the fields.");//display this if any one of the three fields is empty
+            }
+        });
+    </script>
+
+    <!-- custom element page-footer defined in footer.js -->
+    <page-footer></page-footer>
+
+    <script src="../javascript/footer.js"></script>
+    <script src="../javascript/nav.js"></script>
+</body>
+
+</html>

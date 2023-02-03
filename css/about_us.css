@@ -1,0 +1,252 @@
+h1 {
+  text-align: center;
+}
+/* applying the property of flex to display contents horizontally and evenly distributing the items */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* adding margin, align and padding properties to aboutus-block class */
+.aboutus-block {
+  margin: 0 100px 50px 100px;
+  align-items: left;
+  padding-bottom: 2rem;
+  padding-top: 6vw;
+}
+
+/* adding height and width to the image of class aboutus-image */
+.aboutus-image img {
+  height: 300px;
+  width: 425px;
+}
+
+/* centering the class aboutus-content using margin and setting left to 0 */
+.aboutus-content {
+  margin: auto 0;
+  left: 0;
+}
+
+/* putting padding-bottom to h1 of class aboutus-header */
+.aboutus-header h1 {
+  padding-bottom: 2rem;
+}
+
+/* setting align-items to center, adding margin-top, padding, width, setting text-decoration to none */
+.aboutus-header p {
+  align-items: center;
+  margin-top: 40px;
+  padding: 13px 20px; /*top-bottom left-right */
+  width: fit-content;
+  text-decoration: none;
+  background: #262223;
+  font-size: larger;
+}
+
+/* setting max width of the class our_value to 87% and centering it vertically using margin */
+.our_value{
+  max-width: 87%;
+  margin: 0 auto;
+}
+
+/* setting margin-top of class our_value and team to 100px  */
+.our_value, .team{
+  margin-top: 100px;
+}
+
+/* setting margin-bottom of h1 tags of classes our_value, team and feedback to 50px */
+.our_value h1, .team h1, .feedback h1{
+  margin-bottom: 50px;
+}
+
+
+.values, .members{
+  /* to evenly space out elements within the container */
+  justify-content: space-evenly; 
+}
+
+/* adding css to class each_value */
+.each_value {
+  width: 30%;
+  margin: 0 2vw 2vw 2vw;
+  background-color: #cccccc;
+  border-radius: 30vw 25vw 30vw 12vw;/* top right bottom left */
+  padding: 3vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+
+.each_value h2 {
+  font-size: 2vw;
+}
+
+
+.each_value p {
+  font-size: 1.6vw;
+}
+
+
+.members{
+  flex-wrap: wrap; /*wraps elements to a new line after */
+}
+
+/* adding css to the icons */
+.fa {
+  padding: 0px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  padding-bottom: 2em;
+}
+
+
+
+.team {
+  position: relative; 
+  z-index: 1;
+}
+
+
+
+/* pseudo element */
+a:link {
+  color:black;
+}
+
+/* adding css to image of class member */
+.member img {
+  height: 37vh;
+  margin: auto;
+  border-radius: 50%;
+  padding: 2em 2em;
+}
+
+/* adding css to element with class details of class members */
+.member .details {
+  text-align: center;
+  line-height: 2;
+}
+
+/* adding css to class member */
+.member {
+  margin: 0 5vw 5vw 5vw;/* top right bottom left */
+  border-radius: 6px;
+  background-color: #e1e1e5;
+}
+
+/* adding css to profile image */
+.profile_img {
+  position: relative;
+  text-align: center;
+
+}
+
+/* adding css to overlay the text over the profile image*/
+.overlay {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* adding css to element with class overlay */
+.overlay {
+  color: black;
+  font-weight: 400;
+  font-size: 4vh;
+}
+
+/* adding blur effect to image on hover */
+.profile_img:hover img {
+  filter: blur(4px);
+}
+
+/* changing cursor to pointer while hovering over profile image */
+.profile_img:hover {
+  cursor: pointer;
+}
+
+/* changing opacity of overlay to 1 while hovering over profile image */
+.profile_img:hover .overlay {
+  opacity: 1;
+}
+
+/* the position of about_us id is set to relative */
+#about_us {
+  position: relative;
+}
+
+/*to blur the element with id about us when it is active */
+#about_us.active {
+  filter: blur(10px);
+}
+
+.social-media img{
+  width: 2%;
+  height: 2%;
+}
+
+.CV-container {
+  z-index: 2;
+}
+
+.CV-container h1 {
+  text-align: left;
+}
+
+.CV-container h2 {
+  background-color: lightgrey;
+  font-size: 3.5vh;
+}
+
+.CV-container .head {
+  padding-left: 6vw;
+}
+
+/* adding css to close button of CV-container */
+.CV-container .closeBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 6%;
+  top: 2%;
+  height: 5vh;
+  width: 5vh;
+  color: black;
+  font-size: 4vw;
+  font-weight: 700;
+  line-height: 4vw;
+  border: none;
+  background: none;
+}
+
+/* adding css to modal class */
+.modal {
+  position: absolute; /* used to position it to be absolute relative to its ancestor class CV-container */
+  margin: 0 auto;
+  opacity: 0;
+  width: 80%;
+  left: 10%;
+  height: fit-content;
+  background-color: rgb(230, 225, 225);
+  padding: 3vw;
+  transition: 200ms ease-in-out; /* to set the transition effect with 200 millisecond with easing effect */
+}
+
+/* adding top to elements with id modal1 through modal5 */
+#modal1,
+#modal2,
+#modal3,
+#modal4,
+#modal5
+{
+top: 200vh;
+}
+
+/* to set the opacity of modal to 1 when it is active */
+.modal.active {
+  opacity: 1;
+}

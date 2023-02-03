@@ -1,0 +1,73 @@
+/* research page */
+.research{
+    padding-top: 7rem;
+}
+
+/* header of the page */
+.research-header{
+    text-align: center;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-bottom: 40px;
+    border-bottom: .1rem solid black;
+}
+
+.research-header h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.research-header h4{
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* individual research block */
+.research-block{
+    display: flex;      /*to align two or more elements of a div in side by side form*/
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: left;
+    margin-bottom: 50px;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid rgb(199, 194, 194);
+}
+
+.block-image img{
+    height: 300px;
+    width: 550px;
+}
+/* individual block content */
+.block-content{
+    margin: auto 0;
+    left: 0;
+}
+
+.block-content p{
+    text-align: left;
+    font-size: .9rem;
+    color: rgb(116, 113, 113);
+}
+
+.block-content p a{
+    font-size: .9rem;
+    color: rgb(19, 19, 19);
+    transition: 0.01s ease;
+}
+
+.block-content p a:hover{
+    border-bottom: 0.1rem solid black;
+}
+
+/* header of the indiviual block */
+.block-header a{
+    font-size: 2rem;
+    color: black;
+    transition: 0.01s ease;
+}
+
+.block-header a:hover{
+    border-bottom: 0.11rem solid black;
+}
+
