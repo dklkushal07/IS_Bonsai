@@ -1,13 +1,15 @@
+/* css of images in the content */
 .value img{
-    align-items: center;
     width: 100%;
     height: 100%;
 }
 
+/* css of the content section */
 .value-content {
     margin-bottom: 25px;
 }
 
+/* css of images inside the value-content class */
 .value-content img{
     width: 50%;
     height: 50%;
@@ -18,6 +20,7 @@
     margin-bottom: 25px;
 }
 
+/* css of the video inside the value class */
 .value video{
     margin-left: 20%; 
     margin-top: 25px; 

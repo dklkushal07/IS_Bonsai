@@ -1,7 +1,9 @@
+/* research page */
 .research{
     padding-top: 7rem;
 }
 
+/* header of the page */
 .research-header{
     text-align: center;
     margin-left: 90px;
@@ -20,8 +22,9 @@
     margin-bottom: 2.5rem;
 }
 
+/* individual research block */
 .research-block{
-    display: flex;
+    display: flex;      /*to align two or more elements of a div in side by side form*/
     justify-content: space-between;
     margin-left: 100px;
     margin-right: 100px;
@@ -35,7 +38,7 @@
     height: 300px;
     width: 550px;
 }
-
+/* individual block content */
 .block-content{
     margin: auto 0;
     left: 0;
@@ -57,7 +60,7 @@
     border-bottom: 0.1rem solid black;
 }
 
-
+/* header of the indiviual block */
 .block-header a{
     font-size: 2rem;
     color: black;
