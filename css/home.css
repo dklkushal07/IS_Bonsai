@@ -12,7 +12,7 @@ body{
     align-items: center;
 }
 
-
+/* Sets the image element inside element with 'parallax-section' class to be of full dimensions */
 .parallax-section img {
     position: absolute;
     top: 0;
@@ -23,7 +23,7 @@ body{
     pointer-events: none;
 }
 
-
+/* Sets the initial css properties of elements having 'parallax-section' class */
 .parallax-section::before{
     content:'';
     position: absolute;
@@ -63,7 +63,7 @@ body{
     background: linear-gradient(to bottom, #264a0c, #faf9f8);
 }
 
-
+/* Sets inital css properties of elements having 'hidden' class */
 .hidden{
     opacity: 0;
     filter: blur(5px);
@@ -122,6 +122,7 @@ body{
     width:100%;
 }
 
+/* Sets the position of p element inside element with 'tech-text' id to be inside the laptop image */
 #tech-text p{
     position: absolute;
     top: 50%;
@@ -130,16 +131,19 @@ body{
     line-height: 50px;
 }
 
+/* Sets the children of element with 'people-list' class
+ to be positioned horizontally with a gap of 60px with one another */
 .people-list{
     display: flex;
     flex-direction: row;
     gap: 60px;
 }
 
+/* Sets the dimensions of image of team members */
 .person img{
     width: 150px;
     height: 150px;
-    border-radius: 10rem;
+    border-radius: 10rem; 
     object-fit: cover;
 }
 

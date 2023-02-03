@@ -1,6 +1,6 @@
 body{
     display: grid;
-    height: 100vh;
+    height: 100vh; /* Sets the entire page to equal to one full screen page */
     background-color: #faf9f8;
 }
 
@@ -16,6 +16,7 @@ body{
 }
 
 .main-box{
+    /* Aligns the box to center of parent */
     align-self: center;
     justify-self: center;
     width: 100%;
@@ -73,6 +74,7 @@ form{
     font-size: 0.7rem;
 }
 
+/* Sets css properties to elements having 'input-field' class */
 .input-field{
     position: absolute;
     width: 100%;
@@ -85,10 +87,7 @@ form{
     transition: 0.4s;
 }
 
-.input-field.active{
-    /* change the color of bottom border */
 
-}
 
 /* Selects the label element that comes immediately after the active input-field */
 .input-field.active + label{
@@ -96,6 +95,7 @@ form{
     top: -2px;
 }
 
+/* Sets css properties to label elements */
 label{
     position: absolute;
     left: 0;
@@ -104,7 +104,7 @@ label{
     pointer-events: none;
     transition: 0.4s;
 }
-
+/* Sets css properties to elements having 'toggle-ls' class */
 .toggle-ls {
     color: #151111;
     text-decoration: none;
@@ -113,44 +113,51 @@ label{
     transition: 0.3s;
   }
   
+  /* Sets css properties to elements having 'toggle-ls' class on hover */
   .toggle-ls:hover {
     color: #8371fd;
   }
 
+  /* Sets css properties to elements having 'submit-form' class */
   .submit-form{
     display: inline-block;
     width: 100%;
     height: 40px;
-    /* background-color: ; */
-    /* color: ; */
     border: none;
     cursor: pointer;
     border-radius: 0.2rem;
     margin-bottom: 1rem;
   }
 
+/* Sets css properties to elements having 'signup-form' class */
   .signup-form{
     opacity: 0;
     pointer-events: none;
   }
 
+/* Applies css to 'form-wrapper' class to the elements having both 'login-container' and 'signup-mode' class */
   .login-container.signup-mode .form-wrapper{
     left: 55%;
   }
 
+/* Applies css to 'carousel' class to the elements having both 'login-container' and 'signup-mode' class */
   .login-container.signup-mode .carousel{
     left: 0%;
   }
 
+  /* Applies css to 'signup-form' class to the elements having both 'login-container' and 'signup-mode' class */
 .login-container.signup-mode .signup-form{
     opacity: 100;
     pointer-events: all;
 }
+
+/* Applies css to 'login-form' class to the elements having both 'login-container' and 'signup-mode' class */
 .login-container.signup-mode .login-form{
     opacity:0;
     pointer-events: none;
 }
 
+/* Sets css properties to elements having 'carousel' class */
 .carousel{
     position: absolute;
     height: 100%;
@@ -161,7 +168,7 @@ label{
     transition: 0.8s ease-in-out;
 }
 
-
+/* Sets css properties to footer */
 footer{
     position: fixed;
     bottom: 15px;
